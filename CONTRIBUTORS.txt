@@ -8,4 +8,10 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-- Rafael Corchuelo (corchu@us.es)
+- Pedro Jesús Muñoz Cifuentes (pedmuncif@alum.us.es)
+- Pedro Pablo Carvajal Moreno (p.pablocarvajalmoreno@gmail.com)
+- José Francisco Regadera Mejías (josregmej@alum.us.es)
+- Javier Hidalgo Rodríguez (javhidrod8@gmail.com)
+- Enrique Moreno Vázquez (enrmorvaz@alum.us.es)
+
+
