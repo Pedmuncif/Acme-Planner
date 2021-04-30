@@ -2,6 +2,7 @@ package acme.features.authenticated.tasks;
 
 
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -15,7 +16,7 @@ public interface AuthenticatedTaskRepository extends AbstractRepository{
 	@Query("select a from Task a")
 	Collection<Task> findMany();
 	
-	//@Query("select a from Task a where a.finishMoment => ?1")
-	//Collection<Task> finishTask(Date finished);
+	@Query("select t from Task t where t.finishMoment <= ?1 and t.status = 'PUBLIC' ")
+	Collection<Task> findTaskFinished(Date finished);
 
 }

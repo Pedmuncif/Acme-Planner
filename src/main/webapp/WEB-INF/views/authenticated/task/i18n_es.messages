@@ -1,0 +1,17 @@
+anonymous.task.form.label.title = Titulo:
+anonymous.task.form.label.description = Descripcion:
+anonymous.task.form.labelstartMoment = Fecha de inicio:
+anonymous.task.form.labelfinishMoment = Fecha de fin:
+anonymous.task.form.labelworkload = Carga de trabajo:
+anonymous.task.form.labellink = Link:
+anonymous.task.form.label.status = Estado:
+
+anonymous.task.form.button.return = Volver
+
+anonymous.task.list.label.title = Título
+anonymous.task.list.label.description = Descripción
+anonymous.task.list.label.startMoment = Momento de inicio
+anonymous.task.list.label.finishMoment = Momento de finalización
+anonymous.task.list.label.workload = Carga de trabajo
+anonymous.task.list.label.link = Link
+anonymous.task.list.label.status = Estado

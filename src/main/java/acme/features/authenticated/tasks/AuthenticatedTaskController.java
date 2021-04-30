@@ -13,7 +13,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/authenticated/tasks/")
+@RequestMapping("/authenticated/task/")
 public class AuthenticatedTaskController extends AbstractController<Authenticated, Task> {
 	
 	// Internal state --------------------------------------------------
@@ -21,15 +21,15 @@ public class AuthenticatedTaskController extends AbstractController<Authenticate
 	@Autowired
 	private AuthenticatedTaskListService listService;
 	
-	//@Autowired
-	//private AuthenticatedTaskCreateService createService;
+	@Autowired
+	private AuthenticatedTaskShowService showService;
 	
 	//Constructors -----------------------------------------------------
 	
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
-		//super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 
 }

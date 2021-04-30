@@ -1,7 +1,9 @@
 package acme.features.authenticated.tasks;
 
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,16 +37,19 @@ public class AuthenticatedTaskListService implements AbstractListService<Authent
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "author", "text", "moment");
+		request.unbind(entity, model, "title", "description", "startMoment", "finishMoment", "workload", "link", "status");
 	}
 	
 	@Override
 	public Collection<Task> findMany(final Request<Task> request){
 		assert request !=null;
-		
 		Collection<Task> result;
 		
-		result = this.repository.findMany();
+		Calendar calendar;
+		calendar = Calendar.getInstance();
+		final Date now = calendar.getTime();
+		
+		result=this.repository.findTaskFinished(now);
 		
 		return result;
 	}
