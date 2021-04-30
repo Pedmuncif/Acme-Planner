@@ -31,6 +31,7 @@ master.menu.sign-out = Sign out
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.create-shout = Create Shout
+master.menu.anonymous.list-shout = List Shouts
 
 # master.menu.administrator ###################################################
 
