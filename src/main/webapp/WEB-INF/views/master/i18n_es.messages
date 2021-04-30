@@ -32,6 +32,7 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.create-shout = Crear Grito
 master.menu.anonymous.list-shout = Mostrar gritos
+master.menu.anonymous.list-task = Listar Tareas
 
 # master.menu.administrator ###################################################
 
