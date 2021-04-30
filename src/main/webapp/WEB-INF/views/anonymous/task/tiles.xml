@@ -6,8 +6,8 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/tasks/list" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/tasks/list.jsp" />
+	<definition name="anonymous/task/list" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/task/list.jsp" />
 	</definition>
 
 </tiles-definitions>

@@ -4,3 +4,4 @@ anonymous.task.list.label.startMoment = Start Moment
 anonymous.task.list.label.finishMoment = Finish Moment
 anonymous.task.list.label.workload = Workload
 anonymous.task.list.label.link = Link
+anonymous.task.list.label.status = Status

@@ -1,5 +1,6 @@
 package acme.features.anonymous.tasks;
 
+import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
 
@@ -38,10 +39,11 @@ public class AnonymousTaskListService implements AbstractListService<Anonymous, 
 	public Collection<Task> findMany(final Request<Task> request) {
 		assert request!=null;
 		Collection<Task> result;
-		final Date nonFinished = new Date();
 		
-		
-		result=this.repository.findTaskNonFinished(nonFinished);
+		Calendar calendar;
+		calendar = Calendar.getInstance();
+		final Date now = calendar.getTime();
+		result=this.repository.findTaskNonFinished(now);
 		return result;
 	}
 
