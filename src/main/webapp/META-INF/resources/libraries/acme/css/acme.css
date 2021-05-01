@@ -87,7 +87,7 @@ footer {
 /* Patches to datatables --------------------------------------------------- */
 
 table.dataTable tbody tr.selected {
-	background-color: LightYellow !important;
+	background-color:LightYellow !important;
 	color: Black;
 }
 
