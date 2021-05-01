@@ -78,7 +78,17 @@
 		<property name="workload" value="1"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PRIVATE"></property>
-</bean>
+	</bean>
+	
+	<bean id="task07" class="acme.entities.tasks.Task">
+		<property name="title" value="Task002: Modelling the entity."/>
+		<property name="description" value="Create entity Shout"/>
+		<property name="startMoment" value="2021/06/24 10:30"/>
+		<property name="finishMoment" value="2021/06/28 11:00"/>
+		<property name="workload" value="0.5"/>
+		<property name="link" value="http://www.example.org"/>
+		<property name="status" value="PUBLIC"></property>
+	</bean>
 	
 	<!--  Shouts -->
 	

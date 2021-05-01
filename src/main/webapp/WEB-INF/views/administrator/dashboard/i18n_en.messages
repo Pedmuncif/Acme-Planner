@@ -1,0 +1,19 @@
+administrator.dashboard.form.title.show = Dashboard
+
+administrator.dashboard.form.title.general-indicators = General indicators
+administrator.dashboard.form.label.nTasksPublic = Public Tasks Num
+administrator.dashboard.form.label.nTasksPrivate = Private Taks Num
+administrator.dashboard.form.label.nTasksFinished = Finished Tasks
+administrator.dashboard.form.label.nTasksNoFinished = No Finished Tasks
+
+administrator.dashboard.form.title.workload-indicators = Workload indicators
+administrator.dashboard.form.label.averageWorkload = Average Workload
+administrator.dashboard.form.label.standardDeviationWorkload = Standard Deviation Workload
+administrator.dashboard.form.label.maxWorkload = Max Workload
+administrator.dashboard.form.label.minWorkload = Min Workload
+
+administrator.dashboard.form.title.executionPeriod-indicators = Execution Period indicators
+administrator.dashboard.form.label.averageExecutionPeriod = Average Execution Period
+administrator.dashboard.form.label.standardDeviationExecutionPeriod = Standard Deviation Execution Period
+administrator.dashboard.form.label.maxExecutionPeriod = Max Execution Period
+administrator.dashboard.form.label.minExecutionPeriod = Min Execution Period
