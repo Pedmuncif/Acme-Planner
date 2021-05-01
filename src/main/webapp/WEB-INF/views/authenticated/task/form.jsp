@@ -18,13 +18,15 @@
 
 <acme:form readonly="true">
 	<acme:form-textbox code="authenticated.task.form.label.title" path="title"/>
-	<acme:form-password code="authenticated.task.form.label.description" path="description"/>
-	<acme:form-password code="authenticated.task.form.label.startMoment" path="startMoment"/>
+	<acme:form-textbox code="authenticated.task.form.label.description" path="description"/>
+	<acme:form-textbox code="authenticated.task.form.label.startMoment" path="startMoment"/>
 	<acme:form-textbox code="authenticated.task.form.label.finishMoment" path="finishMoment"/>
 	<acme:form-textbox code="authenticated.task.form.label.workload" path="workload"/>
 	<acme:form-textbox code="authenticated.task.form.label.link" path="link"/>
-	<acme:form-option code="PUBLIC" value="PUBLIC" selected="${status == 'PUBLIC'}"/>
-	<acme:form-option code="PRIVATE" value="PRIVATE" selected="${status == 'PRIVATE'}"/>
+	<acme:form-select code ="authenticated.task.form.label.status" path="status">
+        <acme:form-option code="PUBLIC" value="PUBLIC" selected="${status=='PUBLIC'}"/>
+        <acme:form-option code="PRIVATE" value="PRIVATE" selected="${status=='PRIVATE'}"/>
+    </acme:form-select>
 	
   	<acme:form-return code="authenticated.task.form.button.return"/>
 </acme:form>
