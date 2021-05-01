@@ -24,6 +24,8 @@
 			<acme:menu-suboption code="master.menu.anonymous.list-shout" action="/anonymous/shout/list"/>
       <acme:menu-suboption code="master.menu.anonymous.list-task" action="/anonymous/task/list"/>
 		</acme:menu-option>
+    
+    <acme:menu-option code="master.menu.user-account.list-task" action="/authenticated/task/list" access="isAuthenticated()"/>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
@@ -58,4 +60,5 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
+
 

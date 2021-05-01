@@ -1,0 +1,17 @@
+authenticated.task.form.label.title = Titulo:
+authenticated.task.form.label.description = Descripcion:
+authenticated.task.form.labelstartMoment = Fecha de inicio:
+authenticated.task.form.labelfinishMoment = Fecha de fin:
+authenticated.task.form.labelworkload = Carga de trabajo:
+authenticated.task.form.labellink = Link:
+authenticated.task.form.label.status = Estado:
+
+authenticated.task.form.button.return = Volver
+
+authenticated.task.list.label.title = Título
+authenticated.task.list.label.description = Descripción
+authenticated.task.list.label.startMoment = Momento de inicio
+authenticated.task.list.label.finishMoment = Momento de finalización
+authenticated.task.list.label.workload = Carga de trabajo
+authenticated.task.list.label.link = Link
+authenticated.task.list.label.status = Estado
