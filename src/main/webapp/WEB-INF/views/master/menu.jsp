@@ -24,7 +24,9 @@
       		<acme:menu-suboption code="master.menu.anonymous.list-task" action="/anonymous/task/list"/>
 		</acme:menu-option>
     
-    	<acme:menu-option code="master.menu.user-account.list-task" action="/authenticated/task/list" access="isAuthenticated()"/>
+    	<acme:menu-option code="master.menu.user-account.authenticated" access="isAuthenticated()">
+    		<acme:menu-suboption code="master.menu.user-account.list-task" action="/authenticated/task/list" access="isAuthenticated()"/>
+    	</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
