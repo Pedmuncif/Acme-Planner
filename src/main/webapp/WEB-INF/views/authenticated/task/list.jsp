@@ -20,9 +20,6 @@
 	<acme:list-column code = "authenticated.task.list.label.description" path = "description" />
 	<acme:list-column code = "authenticated.task.list.label.startMoment" path = "startMoment" />
 	<acme:list-column code = "authenticated.task.list.label.finishMoment" path = "finishMoment" />
-	<acme:list-column code = "authenticated.task.list.label.workload" path = "workload" />
-	<acme:list-column code = "authenticated.task.list.label.link" path = "link" />
-	<acme:list-column code = "authenticated.task.list.label.status" path = "status" />
 	
 </acme:list>
 

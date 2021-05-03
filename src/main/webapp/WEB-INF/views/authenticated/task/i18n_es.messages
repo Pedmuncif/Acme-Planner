@@ -12,6 +12,3 @@ authenticated.task.list.label.title = Título
 authenticated.task.list.label.description = Descripción
 authenticated.task.list.label.startMoment = Momento de inicio
 authenticated.task.list.label.finishMoment = Momento de finalización
-authenticated.task.list.label.workload = Carga de trabajo
-authenticated.task.list.label.link = Link
-authenticated.task.list.label.status = Estado

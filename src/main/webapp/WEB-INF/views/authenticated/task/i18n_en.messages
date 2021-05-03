@@ -12,6 +12,3 @@ authenticated.task.list.label.title = Title
 authenticated.task.list.label.description = Description
 authenticated.task.list.label.startMoment = Start Moment
 authenticated.task.list.label.finishMoment = Finish Moment
-authenticated.task.list.label.workload = Workload
-authenticated.task.list.label.link = Link
-authenticated.task.list.label.status = Status
