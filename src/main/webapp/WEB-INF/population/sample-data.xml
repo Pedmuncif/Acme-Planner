@@ -31,8 +31,8 @@
 	</bean>
 	
 	<bean id="task02" class="acme.entities.tasks.Task">
-		<property name="title" value="Task002: Modelling the entity."/>
-		<property name="description" value="Create entity Shout"/>
+		<property name="title" value="Task002: Creating the data model."/>
+		<property name="description" value="Creating the data model."/>
 		<property name="startMoment" value="2021/06/24 10:30"/>
 		<property name="finishMoment" value="2021/06/24 11:00"/>
 		<property name="workload" value="0.5"/>
@@ -41,8 +41,8 @@
 	</bean>
 	
 	<bean id="task03" class="acme.entities.tasks.Task">
-		<property name="title" value="Task003:"/>
-		<property name="description" value="Create entity Task"/>
+		<property name="title" value="Task003: Creating entity shout"/>
+		<property name="description" value="Creating entity shout"/>
 		<property name="startMoment" value="2021/06/25 12:30"/>
 		<property name="finishMoment" value="2021/06/26 14:30"/>
 		<property name="workload" value="3"/>
@@ -51,8 +51,8 @@
 	</bean>
 	
 	<bean id="task04" class="acme.entities.tasks.Task">
-		<property name="title" value="Task004: Create the data model"/>
-		<property name="description" value="Create the data model"/>
+		<property name="title" value="Task004: Creating entity task"/>
+		<property name="description" value="Creating entity task"/>
 		<property name="startMoment" value="2021/06/29 11:30"/>
 		<property name="finishMoment" value="2021/06/30 14:30"/>
 		<property name="workload" value="2"/>
@@ -61,7 +61,7 @@
 	</bean>
 	
 	<bean id="task05" class="acme.entities.tasks.Task">
-		<property name="title" value="Task005: List Shout"/>
+		<property name="title" value="Task005: Listing Shout"/>
 		<property name="description" value="List Shout"/>
 		<property name="startMoment" value="2021/03/24 11:30"/>
 		<property name="finishMoment" value="2021/03/24 14:30"/>
@@ -71,8 +71,8 @@
 	</bean>
 	
 	<bean id="task06" class="acme.entities.tasks.Task">
-		<property name="title" value="Task006: Shout Details"/>
-		<property name="description" value="Shout Details"/>
+		<property name="title" value="Task006: Creating a shout and publishing it"/>
+		<property name="description" value="Creating a shout and publishing it"/>
 		<property name="startMoment" value="2021/03/24 11:30"/>
 		<property name="finishMoment" value="2021/03/24 14:30"/>
 		<property name="workload" value="1"/>
@@ -81,14 +81,95 @@
 	</bean>
 	
 	<bean id="task07" class="acme.entities.tasks.Task">
-		<property name="title" value="Task002: Modelling the entity."/>
-		<property name="description" value="Create entity Shout"/>
+		<property name="title" value="Task007: Listing public tasks that aren't finished."/>
+		<property name="description" value="Listing public tasks that aren't finished."/>
 		<property name="startMoment" value="2021/06/24 10:30"/>
 		<property name="finishMoment" value="2021/06/28 11:00"/>
 		<property name="workload" value="0.5"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
+	
+	<bean id="task08" class="acme.entities.tasks.Task">
+		<property name="title" value="Task008: Displaying the details of any non finished task."/>
+		<property name="description" value="Displaying the details of any non finished task."/>
+		<property name="startMoment" value="2021/06/24 10:30"/>
+		<property name="finishMoment" value="2021/06/28 11:00"/>
+		<property name="workload" value="0.5"/>
+		<property name="link" value="http://www.example.org"/>
+		<property name="status" value="PUBLIC"></property>
+	</bean>
+	
+	<bean id="task09" class="acme.entities.tasks.Task">
+		<property name="title" value="Task009: Listing public tasks that are finished."/>
+		<property name="description" value="Listing public tasks that are finished."/>
+		<property name="startMoment" value="2021/05/23 12:30"/>
+		<property name="finishMoment" value="2021/05/24 14:00"/>
+		<property name="workload" value="3"/>
+		<property name="link" value="http://www.example.org"/>
+		<property name="status" value="PUBLIC"></property>
+	</bean>
+	
+	<bean id="task010" class="acme.entities.tasks.Task">
+		<property name="title" value="Task010: Displaying the details of any finished task."/>
+		<property name="description" value="Displaying the details of any finished task."/>
+		<property name="startMoment" value="2021/05/24 10:30"/>
+		<property name="finishMoment" value="2021/05/28 11:00"/>
+		<property name="workload" value="1.9"/>
+		<property name="link" value="http://www.example.org"/>
+		<property name="status" value="PUBLIC"></property>
+	</bean>
+	
+	<bean id="task011" class="acme.entities.tasks.Task">
+		<property name="title" value="Task011: Displaying a dashboard with indicators."/>
+		<property name="description" value="Displaying a dashboard with indicators."/>
+		<property name="startMoment" value="2021/05/29 09:30"/>
+		<property name="finishMoment" value="2021/05/30 12:00"/>
+		<property name="workload" value="0.5"/>
+		<property name="link" value="http://www.example.org"/>
+		<property name="status" value="PUBLIC"></property>
+	</bean>
+	
+	<bean id="task012" class="acme.entities.tasks.Task">
+		<property name="title" value="Task012: Populate database "/>
+		<property name="description" value="Populate database "/>
+		<property name="startMoment" value="2021/05/10 10:30"/>
+		<property name="finishMoment" value="2021/05/12 11:00"/>
+		<property name="workload" value="0.7"/>
+		<property name="link" value="http://www.example.org"/>
+		<property name="status" value="PUBLIC"></property>
+	</bean>
+	
+	<bean id="task013" class="acme.entities.tasks.Task">
+		<property name="title" value="Task013: Fixing errors UML"/>
+		<property name="description" value="Solution errors UML"/>
+		<property name="startMoment" value="2021/05/14 17:30"/>
+		<property name="finishMoment" value="2021/05/15 20:00"/>
+		<property name="workload" value="1.5"/>
+		<property name="link" value="http://www.example.org"/>
+		<property name="status" value="PUBLIC"></property>
+	</bean>
+	
+	<bean id="task014" class="acme.entities.tasks.Task">
+		<property name="title" value="Task014: Change proyect's title"/>
+		<property name="description" value="Change proyect's title"/>
+		<property name="startMoment" value="2021/04/24 08:30"/>
+		<property name="finishMoment" value="2021/04/27 09:00"/>
+		<property name="workload" value="0.4"/>
+		<property name="link" value="http://www.example.org"/>
+		<property name="status" value="PUBLIC"></property>
+	</bean>
+	
+	<bean id="task015" class="acme.entities.tasks.Task">
+		<property name="title" value="Task015: Change proyect's logo"/>
+		<property name="description" value="Change proyect's logo"/>
+		<property name="startMoment" value="2021/04/27 10:30"/>
+		<property name="finishMoment" value="2021/04/29 12:00"/>
+		<property name="workload" value="0.7"/>
+		<property name="link" value="http://www.example.org"/>
+		<property name="status" value="PRIVATE"></property>
+	</bean>
+	
 	
 	<!--  Shouts -->
 	
@@ -121,25 +202,87 @@
 	</bean>
 	
 	<bean id="shout05" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/04/13 19:39"/>
+		<property name="moment" value="2021/04/13 12:30"/>
 		<property name="author" value="Enrique Moreno"/>
 		<property name="text" value="Bienvenidos a Acme-Planner"/>
-		<property name="info" value="http://www.example.org"></property>
+		<property name="info" value="http://www.sevillafc.org"></property>
 	</bean>
 	
 	<bean id="shout06" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/04/13 19:39"/>
-		<property name="author" value="Enrique Moren"/>
-		<property name="text" value="Bienvenidos a Acme-Planner"/>
-		<property name="info" value="http://www.example.org"></property>
+		<property name="moment" value="2021/04/14 19:30"/>
+		<property name="author" value="Javier Hidalgo"/>
+		<property name="text" value="Bienvenidos a todos!"/>
+		<property name="info" value="http://www.realmadrid.com"></property>
 	</bean>
 	
 	<bean id="shout07" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/04/13 19:39"/>
-		<property name="author" value="Enrique More"/>
-		<property name="text" value="Bienvenidos a Acme-Planner"/>
-		<property name="info" value="http://www.example.org"></property>
+		<property name="moment" value="2021/04/01 12:00"/>
+		<property name="author" value="Pedro Jesus"/>
+		<property name="text" value="Viva el Cadiz"/>
+		<property name="info" value="https://www.cadizcf.com"></property>
+	</bean>
+	
+	<bean id="shout08" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/20 20:39"/>
+		<property name="author" value="Pedro Pablo"/>
+		<property name="text" value="Viva el Jerez"/>
+		<property name="info" value="https://xerezdfc.com/"></property>
+	</bean>
+	
+	<bean id="shout09" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/30 19:45"/>
+		<property name="author" value="Jose Francisco"/>
+		<property name="text" value="Me gusta las hambuergesas"/>
+		<property name="info" value="https://burgerking.com/"></property>
 	</bean>
 
+	<bean id="shout10" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2020/04/15 21:30"/>
+		<property name="author" value="Marcos"/>
+		<property name="text" value="BBQ sauce por encima"/>
+		<property name="info" value="https://burgerking.com/"></property>
+	</bean>
+	
+	<bean id="shout11" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/02/21 11:23"/>
+		<property name="author" value="Andres"/>
+		<property name="text" value="Marcos patah eh?"/>
+		<property name="info" value="https://ufc.com/"></property>
+	</bean>
+	
+	<bean id="shout12" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/01/23 19:39"/>
+		<property name="author" value="Andres"/>
+		<property name="text" value="Marcos patah eh?"/>
+		<property name="info" value="https://ufc.com/"></property>
+	</bean>
+	
+	<bean id="shout13" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/23 19:23"/>
+		<property name="author" value="Juan Carlos"/>
+		<property name="text" value="Alo presidentes!"/>
+		<property name="info" value="https://youtube.com/"></property>
+	</bean>
+	
+	<bean id="shout14" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/05/01 19:20"/>
+		<property name="author" value="Andrea"/>
+		<property name="text" value="Por FIN!!"/>
+		<property name="info" value="https://youtube.com/"></property>
+	</bean>
+	
+	<bean id="shout15" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/29 17:10"/>
+		<property name="author" value="Heisenberg"/>
+		<property name="text" value="Say my name!"/>
+		<property name="info" value="https://amc.com/"></property>
+	</bean>
+	
+	<bean id="shout16" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/30 19:24"/>
+		<property name="author" value="Jesse Pinkman"/>
+		<property name="text" value="Hello there"/>
+		<property name="info" value="https://marca.com/"></property>
+	</bean>
 </beans>
 

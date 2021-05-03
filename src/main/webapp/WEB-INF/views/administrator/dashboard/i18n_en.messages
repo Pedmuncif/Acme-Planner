@@ -13,7 +13,7 @@ administrator.dashboard.form.label.maxWorkload = Max Workload
 administrator.dashboard.form.label.minWorkload = Min Workload
 
 administrator.dashboard.form.title.executionPeriod-indicators = Execution Period indicators
-administrator.dashboard.form.label.averageExecutionPeriod = Average Execution Period
-administrator.dashboard.form.label.standardDeviationExecutionPeriod = Standard Deviation Execution Period
-administrator.dashboard.form.label.maxExecutionPeriod = Max Execution Period
-administrator.dashboard.form.label.minExecutionPeriod = Min Execution Period
+administrator.dashboard.form.label.averageExecutionPeriod = Average Execution Period (Days)
+administrator.dashboard.form.label.standardDeviationExecutionPeriod = Standard Deviation Execution Period (Days)
+administrator.dashboard.form.label.maxExecutionPeriod = Max Execution Period (Days)
+administrator.dashboard.form.label.minExecutionPeriod = Min Execution Period (Days)
