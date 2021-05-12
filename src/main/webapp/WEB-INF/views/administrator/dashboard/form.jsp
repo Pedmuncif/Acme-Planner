@@ -19,7 +19,7 @@
 	<acme:message code="administrator.dashboard.form.title.general-indicators"/>
 </h2>
 
-<table class="table table-sm">
+<table class="table table-sm" aria-label="dashboard tasks">
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.dashboard.form.label.nTasksPublic"/>
@@ -58,7 +58,7 @@
 	<acme:message code="administrator.dashboard.form.title.workload-indicators"/>
 </h2>
 
-<table class="table table-sm">
+<table class="table table-sm" aria-label="dashboard Workload">
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.dashboard.form.label.averageWorkload"/>
@@ -97,7 +97,7 @@
 	<acme:message code="administrator.dashboard.form.title.executionPeriod-indicators"/>
 </h2>
 
-<table class="table table-sm">
+<table class="table table-sm" aria-label="dashboard Execution Period">
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.dashboard.form.label.averageExecutionPeriod"/>
