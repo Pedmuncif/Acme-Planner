@@ -21,42 +21,28 @@ public class ShoutTest extends AcmeTest{
 	
 	// Test cases -------------------------------------------------------------
 
-//		@ParameterizedTest
-//		@CsvFileSource(resources = "/shout/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
-//		@Order(10)
-//		public void positiveCreateShout(final String author, final String text, final String info) {
-//			super.clickAndGo(By.linkText("Anonymous"));
-//			super.submit(By.linkText("Create Shout"));
-//			super.fill(By.id("author"), author);
-//			super.fill(By.id("text"), text);
-//			super.fill(By.id("info"), info);
-//			super.submit(By.className("btn-primary"));
-//		}
-		
 		@ParameterizedTest
-		@CsvFileSource(resources = "/shout/negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+		@CsvFileSource(resources = "/shout/create-shout-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 		@Order(10)
-		public void negativeCreateShout(final String author, final String text, final String info) {
-			super.clickAndGo(By.linkText("Anonymous"));
-			super.submit(By.linkText("Create Shout"));
+		public void positiveCreateShout(final String author, final String text, final String info) {
+			super.clickOnMenu("Anonymous", "Create Shout");
 			super.fill(By.id("author"), author);
 			super.fill(By.id("text"), text);
 			super.fill(By.id("info"), info);
-			super.submit(By.className("btn-primary"));
+			super.clickOnSubmitButton("Shout!");
+		}
+		
+		@ParameterizedTest
+		@CsvFileSource(resources = "/shout/create-shout-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+		@Order(10)
+		public void negativeCreateShout(final String author, final String text, final String info) {
+			super.clickOnMenu("Anonymous", "Create Shout");
+			super.fill(By.id("author"), author);
+			super.fill(By.id("text"), text);
+			super.fill(By.id("info"), info);
+			super.clickOnSubmitButton("Shout!");
 			
 			super.checkErrorsExist();
 		}
 	
 }
-
-/*		@ParameterizedTest
-@CsvFileSource(resources = "/shout/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
-@Order(10)
-public void positiveCreateShout(final String author, final String text, final String info) {
-	super.clickAndGo(By.linkText("Anonymous"));
-	super.submit(By.linkText("Create Shout"));
-	super.fill(By.id("author"), author);
-	super.fill(By.id("text"), text);
-	super.fill(By.id("info"), info);
-	super.submit(By.className("btn-primary"));
-}*/
