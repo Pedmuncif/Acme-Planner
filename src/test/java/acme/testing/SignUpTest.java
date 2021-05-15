@@ -18,9 +18,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.By;
 
-import acme.framework.testing.AbstractTest;
-
-public class SignUpTest extends AbstractTest {
+public class SignUpTest extends AcmeTest {
 
 	// Internal state ---------------------------------------------------------
 

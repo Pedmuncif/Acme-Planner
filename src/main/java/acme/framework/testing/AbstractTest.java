@@ -381,15 +381,7 @@ public abstract class AbstractTest {
 		this.longSleep();
 	}
 	
-	public void click(final By locator) {
-		assert locator != null;
 
-		WebElement element;
-
-		element = this.locate(locator);
-		element.click();
-		this.shortSleep();
-	}
 
 	// Ancillary methods ------------------------------------------------------
 
@@ -438,22 +430,6 @@ public abstract class AbstractTest {
 		}
 	}
 
-	public void submit(final By locator) {
-		assert locator != null;
 
-		WebElement oldHtml, element;
-		By htmlLocator;
-		WebDriverWait wait;
-
-		htmlLocator = By.tagName("html");
-		oldHtml = this.driver.findElement(htmlLocator);
-		element = this.locate(locator);
-		element.click();
-		this.longSleep();
-
-		wait = new WebDriverWait(this.driver, 30);
-		wait.until(WaitConditions.safeStalenessOf(oldHtml, htmlLocator));
-		
-	}
 	
 }

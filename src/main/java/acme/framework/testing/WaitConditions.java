@@ -69,6 +69,7 @@ public abstract class WaitConditions {
 		return result;
 	}
 
+	//nuevo
 	public static ExpectedCondition<Boolean> safeStalenessOf(final WebElement element, final By locator) {
 		assert element instanceof RemoteWebElement;
 		assert locator != null;
