@@ -18,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
@@ -171,6 +172,18 @@ public abstract class AbstractTest {
 	protected void longSleep() {
 		this.sleep(5, false);
 	}
+	
+	public WebElement locate(final By by) {
+		assert by != null;
+
+		WebElement result;
+
+		result = this.driver.findElement(by);
+		Assertions.assertNotNull(result, "Cannot locate element");
+
+		return result;
+	}
+	
 
 	// Path-related methods ---------------------------------------------------
 
@@ -367,6 +380,16 @@ public abstract class AbstractTest {
 		});
 		this.longSleep();
 	}
+	
+	public void click(final By locator) {
+		assert locator != null;
+
+		WebElement element;
+
+		element = this.locate(locator);
+		element.click();
+		this.shortSleep();
+	}
 
 	// Ancillary methods ------------------------------------------------------
 
@@ -415,4 +438,22 @@ public abstract class AbstractTest {
 		}
 	}
 
+	public void submit(final By locator) {
+		assert locator != null;
+
+		WebElement oldHtml, element;
+		By htmlLocator;
+		WebDriverWait wait;
+
+		htmlLocator = By.tagName("html");
+		oldHtml = this.driver.findElement(htmlLocator);
+		element = this.locate(locator);
+		element.click();
+		this.longSleep();
+
+		wait = new WebDriverWait(this.driver, 30);
+		wait.until(WaitConditions.safeStalenessOf(oldHtml, htmlLocator));
+		
+	}
+	
 }
