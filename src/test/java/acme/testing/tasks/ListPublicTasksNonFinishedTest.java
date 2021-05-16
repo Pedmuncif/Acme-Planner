@@ -21,15 +21,5 @@ public class ListPublicTasksNonFinishedTest extends AcmePlannerTest{
 		super.checkColumnHasValue(recordIndex, 1, description);
 		super.checkColumnHasValue(recordIndex, 2, startMoment);
 		super.checkColumnHasValue(recordIndex, 3, finishMoment);
-		
-		super.clickOnListingRecord(recordIndex);
-
-		super.checkInputBoxHasValue("title", title);
-		super.checkInputBoxHasValue("description", description);
-		super.checkInputBoxHasValue("startMoment", startMoment);
-		super.checkInputBoxHasValue("finishMoment", finishMoment);
-		super.checkInputBoxHasValue("workload", workload);
-		super.checkInputBoxHasValue("link", link);
-		super.checkInputBoxHasValue("status", status);
 	}
 }
