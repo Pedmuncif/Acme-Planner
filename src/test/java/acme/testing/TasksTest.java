@@ -19,27 +19,9 @@ public class TasksTest extends AcmeTest{
 
 	}
 	
-	@ParameterizedTest
-	@CsvFileSource(resources = "/tasks/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(10)
-	public void listShowAnonymousTasks(final int recordIndex, final String title, final String description, final String startMoment, 
-		final String finishMoment, final String workload, final String link, final String status) {
-		
-		super.clickOnMenu("Anonymous", "List non-finished Tasks");
-		
-		super.clickOnListingRecord(recordIndex);
-		
-		super.checkInputBoxHasValue("title", title);
-		super.checkInputBoxHasValue("description", description);
-		super.checkInputBoxHasValue("startMoment", startMoment);
-		super.checkInputBoxHasValue("finishMoment", finishMoment);
-		super.checkInputBoxHasValue("workload", workload);
-		super.checkInputBoxHasValue("link", link);
-		super.checkInputBoxHasValue("status", status);
-	}
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/tasks/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/tasks/positive2.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void listShowAuthenticatedPublicFinishedTasks(final int recordIndex, final String title, final String description, final String startMoment, 
 		final String finishMoment, final String workload, final String link, final String status) {
