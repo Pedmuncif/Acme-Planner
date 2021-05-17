@@ -143,8 +143,8 @@
 	<bean id="task013" class="acme.entities.tasks.Task">
 		<property name="title" value="Task013: Fixing errors UML"/>
 		<property name="description" value="Solution errors UML"/>
-		<property name="startMoment" value="2021/05/14 17:30"/>
-		<property name="finishMoment" value="2021/05/15 20:00"/>
+		<property name="startMoment" value="2021/07/14 17:30"/>
+		<property name="finishMoment" value="2021/07/15 20:00"/>
 		<property name="workload" value="2"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
