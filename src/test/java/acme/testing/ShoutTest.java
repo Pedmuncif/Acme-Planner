@@ -3,7 +3,6 @@ package acme.testing;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import org.openqa.selenium.By;
 
 
 public class ShoutTest extends AcmePlannerTest{
@@ -15,9 +14,11 @@ public class ShoutTest extends AcmePlannerTest{
 		@Order(10)
 		public void positiveCreateShout(final String author, final String text, final String info) {
 			super.clickOnMenu("Anonymous", "Create Shout");
-			super.fill(By.id("author"), author);
-			super.fill(By.id("text"), text);
-			super.fill(By.id("info"), info);
+
+			super.fillInputBoxIn("author", author);
+			super.fillInputBoxIn("text", text);
+			super.fillInputBoxIn("info", info);
+			
 			super.clickOnSubmitButton("Shout!");
 		}
 		
@@ -26,9 +27,11 @@ public class ShoutTest extends AcmePlannerTest{
 		@Order(10)
 		public void negativeCreateShout(final String author, final String text, final String info) {
 			super.clickOnMenu("Anonymous", "Create Shout");
-			super.fill(By.id("author"), author);
-			super.fill(By.id("text"), text);
-			super.fill(By.id("info"), info);
+			
+			super.fillInputBoxIn("author", author);
+			super.fillInputBoxIn("text", text);
+			super.fillInputBoxIn("info", info);
+			
 			super.clickOnSubmitButton("Shout!");
 			
 			super.checkErrorsExist();
