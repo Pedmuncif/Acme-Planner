@@ -5,7 +5,8 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Digits;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -43,9 +44,9 @@ public class Task extends DomainEntity{
 	@NotNull
 	protected Date finishMoment;
 	
-	@NotNull
-	@Digits(integer=3,fraction=2)
-	protected Double workload;
+	@Min(0)
+	@Max(5)
+	protected Integer workload;
 	
 	@URL
 	protected String link;
