@@ -17,10 +17,8 @@ import java.util.List;
 import org.hibernate.internal.util.StringHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import acme.framework.testing.AbstractTest;
-import acme.framework.testing.WaitConditions;
 
 public abstract class AcmeTest extends AbstractTest {
 
@@ -337,34 +335,6 @@ public abstract class AcmeTest extends AbstractTest {
 		result = row.findElements(columnLocator);
 
 		return result;
-	}
-
-	public void click(final By locator) {
-		assert locator != null;
-
-		WebElement element;
-
-		element = this.locate(locator);
-		element.click();
-		this.shortSleep();
-	}
-	
-	public void submit(final By locator) {
-		assert locator != null;
-
-		WebElement oldHtml, element;
-		By htmlLocator;
-		WebDriverWait wait;
-
-		htmlLocator = By.tagName("html");
-		oldHtml = this.driver.findElement(htmlLocator);
-		element = this.locate(locator);
-		element.click();
-		this.longSleep();
-
-		wait = new WebDriverWait(this.driver, 30);
-		wait.until(WaitConditions.safeStalenessOf(oldHtml, htmlLocator));
-		
 	}
 	
 }

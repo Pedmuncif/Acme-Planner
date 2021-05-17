@@ -1,6 +1,5 @@
 package acme.testing;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -9,18 +8,6 @@ import org.openqa.selenium.By;
 
 public class ShoutTest extends AcmePlannerTest{
 	
-	@Override
-	@BeforeAll
-	public void beforeAll() {
-		super.beforeAll();
-
-		super.setBaseCamp("http", "localhost", "8080", "/Acme-Planner", "/master/welcome", "?language=en&debug=true");
-		super.setAutoPausing(true);
-		
-
-	}
-	
-
 	// Test cases -------------------------------------------------------------
 
 		@ParameterizedTest
