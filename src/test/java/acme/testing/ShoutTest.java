@@ -1,12 +1,12 @@
 package acme.testing;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.By;
 
-public class ShoutTest extends AcmeTest{
+
+public class ShoutTest extends AcmePlannerTest{
 	
 	@Override
 	@BeforeAll
@@ -19,6 +19,7 @@ public class ShoutTest extends AcmeTest{
 
 	}
 	
+
 	// Test cases -------------------------------------------------------------
 
 		@ParameterizedTest
