@@ -30,6 +30,11 @@ public class TasksTest extends AcmeTest{
 		
 		super.clickOnMenu("Authenticated", "List finished tasks");
 		
+		super.checkColumnHasValue(recordIndex, 0, title);
+		super.checkColumnHasValue(recordIndex, 1, description);
+		super.checkColumnHasValue(recordIndex, 2, startMoment);
+		super.checkColumnHasValue(recordIndex, 3, finishMoment);
+		
 		super.clickOnListingRecord(recordIndex);
 		
 		super.checkInputBoxHasValue("title", title);
