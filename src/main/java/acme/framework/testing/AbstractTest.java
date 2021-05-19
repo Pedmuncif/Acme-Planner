@@ -18,7 +18,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
@@ -76,6 +75,12 @@ public abstract class AbstractTest {
 		assert !StringHelper.isBlank(contextPath) && contextPath.startsWith("/") && !contextPath.endsWith("/");
 		assert !StringHelper.isBlank(contextHome) && contextHome.startsWith("/") && !contextHome.endsWith("/");
 		assert !StringHelper.isBlank(contextQuery) && contextQuery.startsWith("?");
+		
+		this.protocol = protocol;
+		this.host = host;
+		this.port = port;
+		this.contextPath = contextPath;
+		this.contextQuery = contextQuery;
 
 		this.baseUrl = String.format("%s://%s:%s%s", protocol, host, port, contextPath);
 		this.homeUrl = String.format("%s%s%s", this.baseUrl, contextHome, contextQuery);
@@ -172,18 +177,6 @@ public abstract class AbstractTest {
 	protected void longSleep() {
 		this.sleep(5, false);
 	}
-	
-	public WebElement locate(final By by) {
-		assert by != null;
-
-		WebElement result;
-
-		result = this.driver.findElement(by);
-		Assertions.assertNotNull(result, "Cannot locate element");
-
-		return result;
-	}
-	
 
 	// Path-related methods ---------------------------------------------------
 
@@ -321,8 +314,8 @@ public abstract class AbstractTest {
 
 		this.navigate(() -> {
 			String url;
-
-			url = String.format("%s/%s?%s&%s", this.baseUrl, path, this.contextQuery, query);
+						
+			url = String.format("%s%s%s%s", this.baseUrl, path, this.contextQuery, query);
 			this.driver.get(url);
 			this.longSleep();
 		});
@@ -380,8 +373,6 @@ public abstract class AbstractTest {
 		});
 		this.longSleep();
 	}
-	
-
 
 	// Ancillary methods ------------------------------------------------------
 
@@ -399,8 +390,7 @@ public abstract class AbstractTest {
 	protected boolean isSimpleQuery(final String query) {
 		boolean result;
 
-		result = StringHelper.isBlank(query) || //
-			(!query.startsWith("?") && !query.startsWith("&"));
+		result = query == null || (!query.startsWith("?") && !query.startsWith("&"));
 
 		return result;
 	}
@@ -430,6 +420,4 @@ public abstract class AbstractTest {
 		}
 	}
 
-
-	
 }
