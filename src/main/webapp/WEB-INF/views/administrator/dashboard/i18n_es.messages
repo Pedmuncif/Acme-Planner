@@ -17,3 +17,5 @@ administrator.dashboard.form.label.averageExecutionPeriod = Media Periodo de Eje
 administrator.dashboard.form.label.standardDeviationExecutionPeriod =  Desviacion tipica Periodo de Ejecucion (Dias)
 administrator.dashboard.form.label.maxExecutionPeriod = Maximo Periodo de Ejecucion (Dias)
 administrator.dashboard.form.label.minExecutionPeriod = Minimo Periodo de Ejecucion (Dias)
+
+administrator.dashboard.form.button.return = Volver

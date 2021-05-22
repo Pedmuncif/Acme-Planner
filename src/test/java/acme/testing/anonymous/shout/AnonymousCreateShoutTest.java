@@ -15,15 +15,12 @@ public class AnonymousCreateShoutTest extends AcmePlannerTest {
 	@Order(10)
 	public void positiveCreateShout(final String author, final String text, final String info) {
 		super.clickOnMenu("Anonymous", "Create Shout");
-
+		
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
 		
-		super.clickOnSubmitButton("Shout!");
-		
-		super.checkNotErrorsExist();
-		
+		super.clickOnSubmitButton("Shout!");		
 		super.clickOnMenu("Anonymous", "List Shouts");
 	}
 	
@@ -38,8 +35,6 @@ public class AnonymousCreateShoutTest extends AcmePlannerTest {
 		super.fillInputBoxIn("info", info);
 		
 		super.clickOnSubmitButton("Shout!");
-		
 		super.checkErrorsExist();
 	}
-
 }

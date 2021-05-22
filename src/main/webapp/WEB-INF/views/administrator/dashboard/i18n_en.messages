@@ -17,3 +17,5 @@ administrator.dashboard.form.label.averageExecutionPeriod = Average Execution Pe
 administrator.dashboard.form.label.standardDeviationExecutionPeriod = Standard Deviation Execution Period (Days)
 administrator.dashboard.form.label.maxExecutionPeriod = Max Execution Period (Days)
 administrator.dashboard.form.label.minExecutionPeriod = Min Execution Period (Days)
+
+administrator.dashboard.form.button.return = Return
