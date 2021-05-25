@@ -45,7 +45,7 @@ public class Task extends DomainEntity{
 	protected Date finishMoment;
 	
 	@Min(0)
-	@Max(5)
+	@Max(999)
 	protected Integer workload;
 	
 	@URL

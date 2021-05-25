@@ -25,8 +25,8 @@
 		<property name="description" value="Upload the project to Github"/>
 		<property name="startMoment" value="2021/06/23 15:30"/>
 		<property name="finishMoment" value="2021/06/23 17:30"/>
-		<property name="workload" value="1"/>
-		<property name="link" value="http://www.example.org"/>
+		<property name="workload" value="100"/>
+		<property name="link" value=""/>
 		<property name="status" value="PRIVATE"></property>
 	</bean>
 	
@@ -35,8 +35,8 @@
 		<property name="description" value="Creating the data model."/>
 		<property name="startMoment" value="2021/06/24 10:30"/>
 		<property name="finishMoment" value="2021/06/24 11:00"/>
-		<property name="workload" value="1"/>
-		<property name="link" value="http://www.example.org"/>
+		<property name="workload" value="100"/>
+		<property name="link" value=""/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
 	
@@ -45,8 +45,8 @@
 		<property name="description" value="Creating entity shout"/>
 		<property name="startMoment" value="2021/06/25 12:30"/>
 		<property name="finishMoment" value="2021/06/26 14:30"/>
-		<property name="workload" value="3"/>
-		<property name="link" value="http://www.example.org"/>
+		<property name="workload" value="300"/>
+		<property name="link" value=""/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
 	
@@ -55,7 +55,7 @@
 		<property name="description" value="Creating entity task"/>
 		<property name="startMoment" value="2021/06/29 11:30"/>
 		<property name="finishMoment" value="2021/06/30 14:30"/>
-		<property name="workload" value="2"/>
+		<property name="workload" value="200"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -65,7 +65,7 @@
 		<property name="description" value="List Shout"/>
 		<property name="startMoment" value="2021/03/24 11:30"/>
 		<property name="finishMoment" value="2021/03/24 14:30"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -75,7 +75,7 @@
 		<property name="description" value="Creating a shout and publishing it"/>
 		<property name="startMoment" value="2021/03/24 11:30"/>
 		<property name="finishMoment" value="2021/03/24 14:30"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PRIVATE"></property>
 	</bean>
@@ -85,7 +85,7 @@
 		<property name="description" value="Listing public tasks that aren't finished."/>
 		<property name="startMoment" value="2021/06/24 10:30"/>
 		<property name="finishMoment" value="2021/06/28 11:00"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -95,7 +95,7 @@
 		<property name="description" value="Displaying the details of any non finished task."/>
 		<property name="startMoment" value="2021/06/24 10:30"/>
 		<property name="finishMoment" value="2021/06/28 11:00"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -105,7 +105,7 @@
 		<property name="description" value="Listing public tasks that are finished."/>
 		<property name="startMoment" value="2021/05/23 12:30"/>
 		<property name="finishMoment" value="2021/05/24 14:00"/>
-		<property name="workload" value="3"/>
+		<property name="workload" value="300"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -115,7 +115,7 @@
 		<property name="description" value="Displaying the details of any finished task."/>
 		<property name="startMoment" value="2021/05/24 10:30"/>
 		<property name="finishMoment" value="2021/05/28 11:00"/>
-		<property name="workload" value="2"/>
+		<property name="workload" value="200"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -125,7 +125,7 @@
 		<property name="description" value="Displaying a dashboard with indicators."/>
 		<property name="startMoment" value="2021/05/29 09:30"/>
 		<property name="finishMoment" value="2021/05/30 12:00"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -135,7 +135,7 @@
 		<property name="description" value="Populate database "/>
 		<property name="startMoment" value="2021/05/10 10:30"/>
 		<property name="finishMoment" value="2021/05/12 11:00"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -145,7 +145,7 @@
 		<property name="description" value="Solution errors UML"/>
 		<property name="startMoment" value="2021/07/14 17:30"/>
 		<property name="finishMoment" value="2021/07/15 20:00"/>
-		<property name="workload" value="2"/>
+		<property name="workload" value="200"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -155,7 +155,7 @@
 		<property name="description" value="Change proyect's title"/>
 		<property name="startMoment" value="2021/04/24 08:30"/>
 		<property name="finishMoment" value="2021/04/27 09:00"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -165,7 +165,7 @@
 		<property name="description" value="Change proyect's logo"/>
 		<property name="startMoment" value="2021/04/27 10:30"/>
 		<property name="finishMoment" value="2021/04/29 12:00"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PRIVATE"></property>
 	</bean>
@@ -175,7 +175,7 @@
 		<property name="description" value="Planing proyect"/>
 		<property name="startMoment" value="2021/04/20 11:30"/>
 		<property name="finishMoment" value="2021/04/21 12:00"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -185,7 +185,7 @@
 		<property name="description" value="Creation Announcement"/>
 		<property name="startMoment" value="2021/04/23 17:40"/>
 		<property name="finishMoment" value="2021/04/24 20:31"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -195,7 +195,7 @@
 		<property name="description" value="Listing Announcement"/>
 		<property name="startMoment" value="2021/04/24 19:33"/>
 		<property name="finishMoment" value="2021/04/25 20:39"/>
-		<property name="workload" value="1"/>
+		<property name="workload" value="100"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
@@ -205,8 +205,8 @@
 		<property name="description" value="Details Announcement"/>
 		<property name="startMoment" value="2021/04/25 10:33"/>
 		<property name="finishMoment" value="2021/04/26 16:49"/>
-		<property name="workload" value="1"/>
-		<property name="link" value="http://www.example.org"/>
+		<property name="workload" value="100"/>
+		<property name="link" value=""/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
 	
@@ -215,8 +215,8 @@
 		<property name="description" value="Delete and update Announcement"/>
 		<property name="startMoment" value="2021/04/26 11:33"/>
 		<property name="finishMoment" value="2021/04/27 23:09"/>
-		<property name="workload" value="1"/>
-		<property name="link" value="http://www.example.org"/>
+		<property name="workload" value="100"/>
+		<property name="link" value=""/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
 	
@@ -332,8 +332,8 @@
 	<bean id="shout16" class="acme.entities.shouts.Shout">
 		<property name="moment" value="2021/04/30 19:24"/>
 		<property name="author" value="Jesse Pinkman"/>
-		<property name="text" value="Hello there"/>
-		<property name="info" value="https://marca.com/"></property>
+		<property name="text" value="MI ULTIMO GRITO"/>
+		<property name="info" value=""></property>
 	</bean>
 </beans>
 

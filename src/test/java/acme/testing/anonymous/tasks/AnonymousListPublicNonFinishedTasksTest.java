@@ -10,7 +10,7 @@ public class AnonymousListPublicNonFinishedTasksTest extends AcmePlannerTest{
 	
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/anonymous/tasks/list-public-task-nonfinished-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/anonymous/task/list-public-task-nonfinished-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void listPublicTasksNonFinished(final int recordIndex, final String title, final String description, final String startMoment, 
 		final String finishMoment, final String workload, final String link, final String status) {

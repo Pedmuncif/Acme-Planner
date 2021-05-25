@@ -47,6 +47,7 @@ master.menu.administrator.dashboard = Tablero
 
 master.menu.user-account.authenticated = Autenticado
 master.menu.user-account = Cuenta
+master.menu.user-account.manager = Hazte Manager
 master.menu.user-account.general-data = Datos generales
 master.menu.user-account.list-task = Listar tareas finalizadas
 

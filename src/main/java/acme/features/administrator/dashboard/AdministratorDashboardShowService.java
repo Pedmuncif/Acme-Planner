@@ -50,8 +50,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		
 		final Double		averageWorkload;
 		final Double		standardDeviationWorkload;
-		final Double		maxWorkload;
-		final Double		minWorkload;
+		final Integer		maxWorkload;
+		final Integer		minWorkload;
 		
 		final Double		averageExecutionPeriod;
 		final Double		standardDeviationExecutionPeriod;

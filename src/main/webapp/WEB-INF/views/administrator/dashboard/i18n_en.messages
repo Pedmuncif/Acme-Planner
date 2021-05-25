@@ -6,14 +6,16 @@ administrator.dashboard.form.label.nTasksPrivate = Private Taks Num
 administrator.dashboard.form.label.nTasksFinished = Finished Tasks
 administrator.dashboard.form.label.nTasksNoFinished = No Finished Tasks
 
-administrator.dashboard.form.title.workload-indicators = Workload indicators (Hours)
-administrator.dashboard.form.label.averageWorkload = Average Workload (Hours)
-administrator.dashboard.form.label.standardDeviationWorkload = Standard Deviation Workload (Hours)
-administrator.dashboard.form.label.maxWorkload = Max Workload (Hours)
-administrator.dashboard.form.label.minWorkload = Min Workload (Hours)
+administrator.dashboard.form.title.workload-indicators = Workload indicators (Minutes)
+administrator.dashboard.form.label.averageWorkload = Average Workload (Minutes)
+administrator.dashboard.form.label.standardDeviationWorkload = Standard Deviation Workload (Minutes)
+administrator.dashboard.form.label.maxWorkload = Max Workload (Minutes)
+administrator.dashboard.form.label.minWorkload = Min Workload (Minutes)
 
 administrator.dashboard.form.title.executionPeriod-indicators = Execution Period indicators
 administrator.dashboard.form.label.averageExecutionPeriod = Average Execution Period (Days)
 administrator.dashboard.form.label.standardDeviationExecutionPeriod = Standard Deviation Execution Period (Days)
 administrator.dashboard.form.label.maxExecutionPeriod = Max Execution Period (Days)
 administrator.dashboard.form.label.minExecutionPeriod = Min Execution Period (Days)
+
+administrator.dashboard.form.button.return = Return
