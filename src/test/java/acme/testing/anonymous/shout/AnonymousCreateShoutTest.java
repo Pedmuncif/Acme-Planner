@@ -8,6 +8,9 @@ import acme.testing.AcmePlannerTest;
 
 public class AnonymousCreateShoutTest extends AcmePlannerTest {
 	
+
+
+
 	/* ################################ AnonymousCreateShoutTest ###################################
 	 * 
 	 *  Los siguientes atributos tienen las siguientes restricciones:
@@ -23,6 +26,7 @@ public class AnonymousCreateShoutTest extends AcmePlannerTest {
 	 *  
 	 * 
 	 */
+
 	
 	// Test cases -------------------------------------------------------------
 
