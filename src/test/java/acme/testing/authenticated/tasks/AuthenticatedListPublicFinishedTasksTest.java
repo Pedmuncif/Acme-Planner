@@ -8,6 +8,25 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedListPublicFinishedTasksTest extends AcmePlannerTest{
 	
+	/* ################################ AuthenticatedListPublicFinishedTasksTest ###################################
+	 * 
+	 *  Los siguientes atributos tienen las siguientes restricciones:
+	 *  
+	 * title: @NotEmpty(No puede estar vacío), @Length(max=80)(Tamaño máximo 80 crácteres).
+	 * description: @NotBlank(No puede estar en blanco), @Length(max=500)(Tamaño máximo 500 crácteres).
+	 * startMoment: @Temporal(TemporalType.TIMESTAMP), @NotNull(No puede ser nulo).
+	 * finishMoment: @Temporal(TemporalType.TIMESTAMP), @NotNull(No puede ser nulo).
+	 * workload: @Min(0)(Minimo valor=0), @Max(999)(Máximo valor=999).
+	 * link: @URL(Formato de una url "http://www.....").
+	 * status: @NotNull(No puede ser nulo).
+	 * 
+	 * Esta feature se encarga de mostrar para usuarios autenticados una lista de las tareas finalizadas. 
+	 * Primero se comprueba que los valores en la lista estan bien, y luego comprueba que la tarea tenga cada atributo 
+	 * cumpliendo con las restricciones comentadas anteriormente.
+	 * 
+	 * 
+	 */
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/task/list-task-public-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
