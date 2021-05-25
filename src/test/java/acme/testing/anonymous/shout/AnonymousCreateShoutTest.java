@@ -8,6 +8,22 @@ import acme.testing.AcmePlannerTest;
 
 public class AnonymousCreateShoutTest extends AcmePlannerTest {
 	
+	/* ################################ AnonymousCreateShoutTest ###################################
+	 * 
+	 *  Los siguientes atributos tienen las siguientes restricciones:
+	 *  
+	 *  Author: No puede estar en blanco, el tamaño debe estar entre 5 y 25 caracteres.
+	 *  Text: No puede estar en blanco, el tamaño máximo es 100 carácteres.
+	 *  Info: @URL = Debe tener el formato de una url ("http://www....")
+	 * 
+	 *  En esta feature estamos comprobando la creación de shouts por un usuario anónimo. Se rellenan los campos comprobando que son válidos
+	 *  y crea el shout correspondiente. Si comprobamos los casos positivos, creamos un banco de pruebas en el que todos los
+	 *  parámetros cumplen las restricciones definidas anteriormente. Una vez creado el shout comprueba que se ha creado en la lista.
+	 *  Para los casos negativos, se crea un banco de prueba en el que los parámetros no cumplan las restricciones definidas anteriormente.
+	 *  
+	 * 
+	 */
+	
 	// Test cases -------------------------------------------------------------
 
 	@ParameterizedTest
