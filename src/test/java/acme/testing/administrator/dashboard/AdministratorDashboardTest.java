@@ -8,6 +8,21 @@ import acme.testing.AcmePlannerTest;
 
 public class AdministratorDashboardTest extends AcmePlannerTest{
 	
+	/* ################################ AdministratorDashboardTest ###################################
+	 * 
+	 *  Los siguientes atributos no tienen ninguna restricción, por lo que simplemente vamos a nombrarlos.
+	 *  
+	 *  nTasksPublic, nTasksPrivate, nTasksFinished, nTasksNoFinished, averageWorkload, 
+	 *  standardDeviationWorkload, maxWorkload, minWorkload, averageExecutionPeriod, standardDeviationExecutionPeriod, 
+	 *  maxExecutionPeriod, minExecutionPeriod.
+	 * 
+	 *  En esta feature estamos comprobando que inicie sesion como administrador y checkee cada una de las variables de las que 
+	 *  dispone esta entidad. Como estamos comprobando casos positivos, estos casos han sido creados con el fin de cumplir las 
+	 *  restricciones de cada una de las propiedades descritas anteriormente.
+	 * 
+	 * 
+	 */
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/dashboard-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)

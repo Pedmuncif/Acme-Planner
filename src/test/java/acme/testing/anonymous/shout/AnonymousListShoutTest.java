@@ -8,6 +8,20 @@ import acme.testing.AcmePlannerTest;
 
 public class AnonymousListShoutTest extends AcmePlannerTest {
 	
+	/* ################################ AnonymousListShoutTest ###################################
+	 * 
+	 *  Los siguientes atributos tienen las siguientes restricciones:
+	 *  
+	 *  Author: No puede estar en blanco, el tamaño debe estar entre 5 y 25 caracteres.
+	 *  Text: No puede estar en blanco, el tamaño máximo es 100 carácteres.
+	 *  Info: @URL = Debe tener el formato de una url ("http://www....")
+	 * 
+	 * En esta feature estamos comprobando que los shouts que estan en la lista están bien añadidos checkeando cada atributo con las
+	 * restricciones definidas para cada uno.
+	 *  
+	 * 
+	 */
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shout/list-shout.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
