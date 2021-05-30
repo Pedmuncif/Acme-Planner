@@ -32,6 +32,8 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.create-shout = Create Shout
 master.menu.anonymous.list-shout = List Shouts
 master.menu.anonymous.list-task = List non-finished Tasks
+master.menu.anonymous.create-xxx = Create XXX
+master.menu.anonymous.list-xxx = List XXX
 
 # master.menu.administrator ###################################################
 
