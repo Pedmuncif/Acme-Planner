@@ -26,10 +26,10 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	Double averageTaskWorkload();
 	
 	@Query("select min(workload) from Task")
-	Integer minTaskWorkload();
+	Double minTaskWorkload();
 	
 	@Query("select max(workload) from Task")
-	Integer maxTaskWorkload();
+	Double maxTaskWorkload();
 
 	@Query("select STDDEV(workload) from Task")
 	Double stdevpTaskWorkload();

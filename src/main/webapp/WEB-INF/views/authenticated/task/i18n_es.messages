@@ -2,7 +2,7 @@ authenticated.task.form.label.title = Titulo:
 authenticated.task.form.label.description = Descripcion:
 authenticated.task.form.labelstartMoment = Fecha de inicio:
 authenticated.task.form.labelfinishMoment = Fecha de fin:
-authenticated.task.form.labelworkload = Carga de trabajo:
+authenticated.task.form.labelworkload = Carga de trabajo (Horas y minutos):
 authenticated.task.form.labellink = Link:
 authenticated.task.form.label.status = Estado:
 

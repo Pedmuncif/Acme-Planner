@@ -2,7 +2,7 @@ anonymous.task.form.label.title = Title:
 anonymous.task.form.label.description = Description:
 anonymous.task.form.label.startMoment = Start Moment:
 anonymous.task.form.label.finishMoment = Finish Moment:
-anonymous.task.form.label.workload = Workload:
+anonymous.task.form.label.workload = Workload (Hours and minutes):
 anonymous.task.form.label.link = Link:
 anonymous.task.form.label.status = Status:
 

@@ -6,11 +6,11 @@ administrator.dashboard.form.label.nTasksPrivate = Tareas privadas
 administrator.dashboard.form.label.nTasksFinished = Tareas finalizadas
 administrator.dashboard.form.label.nTasksNoFinished = Tareas no finalizada
 
-administrator.dashboard.form.title.workload-indicators = Indicadores Cargas de trabajo (Minutos)
-administrator.dashboard.form.label.averageWorkload = Media Cargas de trabajo (Minutos)
-administrator.dashboard.form.label.standardDeviationWorkload = Desviación Tipica Cargas de trabajo (Minutos)
-administrator.dashboard.form.label.maxWorkload = Maximo Cargas de trabajo (Minutos)
-administrator.dashboard.form.label.minWorkload = Minimo Cargas de trabajo (Minutos)
+administrator.dashboard.form.title.workload-indicators = Indicadores Cargas de trabajo (Horas y minutos)
+administrator.dashboard.form.label.averageWorkload = Media Cargas de trabajo (Horas y minutos)
+administrator.dashboard.form.label.standardDeviationWorkload = Desviación Tipica Cargas de trabajo (Horas y minutos)
+administrator.dashboard.form.label.maxWorkload = Maximo Cargas de trabajo (Horas y minutos)
+administrator.dashboard.form.label.minWorkload = Minimo Cargas de trabajo (Horas y minutos)
 
 administrator.dashboard.form.title.executionPeriod-indicators = Indicadores Periodo de Ejecucion
 administrator.dashboard.form.label.averageExecutionPeriod = Media Periodo de Ejecucion (Dias)
