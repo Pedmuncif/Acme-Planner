@@ -1,5 +1,7 @@
 package acme.features.anonymous.XXX;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +17,6 @@ public class AnonymousXXXCreateService implements AbstractCreateService<Anonymou
 	
 	@Autowired
 	protected AnonymousXXXRepository repository;
-	
 
 	@Override
 	public boolean authorise(final Request<XXX> request) {
@@ -38,7 +39,7 @@ public class AnonymousXXXCreateService implements AbstractCreateService<Anonymou
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "amount","fecha","moment","flag");
+		request.unbind(entity, model,"fecha","amount","flag");
 		
 	}
 
@@ -47,12 +48,13 @@ public class AnonymousXXXCreateService implements AbstractCreateService<Anonymou
 		assert request != null;
 		
 		XXX result;
-	
+		Date moment;
 		
-	
+		moment = new Date(System.currentTimeMillis()-1);
 		
 		result = new XXX();
-	
+		result.setMoment(moment);
+		
 		return result;
 		
 	}
@@ -69,8 +71,10 @@ public class AnonymousXXXCreateService implements AbstractCreateService<Anonymou
 	public void create(final Request<XXX> request, final XXX entity) {
 		assert request != null;
 		assert entity != null;
-		
-	
+
+		Date moment;
+		moment = new Date(System.currentTimeMillis() -1);
+		entity.setMoment(moment);
 		this.repository.save(entity);
 	}
 

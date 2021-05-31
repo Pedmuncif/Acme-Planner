@@ -8,7 +8,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
 import acme.framework.datatypes.Money;
@@ -27,13 +26,11 @@ public class XXX extends DomainEntity{
 	private static final long serialVersionUID = 1L;
 
 	@Column(unique = true)
-	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
-	@Pattern(regexp = "yyyy/MM/dd")
-	protected Date fecha;
+	@Pattern(regexp = "^\\d{4}-\\d{2}-\\d{2}$",message="yyyy-MM-dd")
+	protected String fecha;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	@Past
 	@NotNull
 	protected Date moment;
 	
@@ -41,6 +38,7 @@ public class XXX extends DomainEntity{
 	@NotNull
 	protected Money amount;
 	
+	@NotNull
 	protected Boolean flag;
 	
 }
