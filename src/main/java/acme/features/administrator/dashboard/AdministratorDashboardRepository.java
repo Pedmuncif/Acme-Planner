@@ -50,4 +50,23 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select STDDEV(DATEDIFF(finishMoment, startMoment)) FROM Task")
 	Double stdevpTaskExecutionPeriod();
 	
+	//
+	
+	@Query("select count(x) FROM Shout x where x.xxx.flag = 0")
+	Integer nShoutNoPublic();
+	
+	@Query("select count(x) FROM Shout x where x.xxx.flag = 1")
+	Integer nShoutPublic();
+
+	@Query("select avg(amount.amount) FROM XXX where  amount.currency = 'EUR' ")
+	Double averageShoutaverageEur();
+	
+	@Query("select STDDEV(amount.amount) FROM XXX where  amount.currency = 'EUR'")
+	Double stdevpShoutaverageEur();
+	
+	@Query("select avg(amount.amount) FROM XXX where  amount.currency = 'USD' ")
+	Double averageShoutaverageUSD();
+	
+	@Query("select STDDEV(amount.amount) FROM XXX where  amount.currency = 'USD'")
+	Double stdevpShoutaverageUSD();
 }

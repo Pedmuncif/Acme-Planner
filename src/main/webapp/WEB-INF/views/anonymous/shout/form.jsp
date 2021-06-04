@@ -11,8 +11,8 @@
 	<acme:form-textbox code="anonymous.xxx.form.label.fecha" path="xxx.fecha" placeholder="yyyy-MM-dd"/>
 	<acme:form-money code="anonymous.xxx.form.label.amount" path="xxx.amount"/>
 	<acme:form-select code="anonymous.xxx.form.label.flag" path="xxx.flag">
-		<acme:form-option code="false" value="false"/>
-		<acme:form-option code="true" value="true"/>
+		<acme:form-option code="false" value="False"/>
+		<acme:form-option code="true" value="True"/>
 	</acme:form-select>
 	
 	

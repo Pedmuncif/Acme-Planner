@@ -29,5 +29,20 @@
 	<acme:form-textbox code="administrator.dashboard.form.label.standardDeviationExecutionPeriod" path="standardDeviationExecutionPeriod"/>
 	<acme:form-textbox code="administrator.dashboard.form.label.maxExecutionPeriod" path="maxExecutionPeriod"/>
 	<acme:form-textbox code="administrator.dashboard.form.label.minExecutionPeriod" path="minExecutionPeriod"/>
+	
+<h2>
+	<acme:message code="administrator.dashboard.form.title.shouts-indicators"/>
+</h2>
+
+	<acme:form-textbox code="administrator.dashboard.form.label.nShoutPublic" path="nShoutPublic"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.nShoutNoPublic" path="nShoutNoPublic"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.stdevpShoutaverageEur" path="stdevpShoutaverageEur"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.averageShoutaverageEur" path="averageShoutaverageEur"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.stdevpShoutaverageUsd" path="stdevpShoutaverageUSD"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.averageShoutaverageUsd" path="averageShoutaverageUSD"/>
+	
 	<acme:form-return code="administrator.dashboard.form.button.return"/>
+	
+	
+	
 </acme:form>

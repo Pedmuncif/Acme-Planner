@@ -18,4 +18,13 @@ administrator.dashboard.form.label.standardDeviationExecutionPeriod =  Desviacio
 administrator.dashboard.form.label.maxExecutionPeriod = Maximo Periodo de Ejecucion (Dias)
 administrator.dashboard.form.label.minExecutionPeriod = Minimo Periodo de Ejecucion (Dias)
 
+administrator.dashboard.form.label.nShoutPublic = Gritos publicos
+administrator.dashboard.form.label.nShoutNoPublic = Gritos privados
+administrator.dashboard.form.title.shouts-indicators = Indicadores de shout
+administrator.dashboard.form.label.stdevpShoutaverageEur = Desviacion tipica (EUR)
+administrator.dashboard.form.label.averageShoutaverageEur = Media (EUR)
+administrator.dashboard.form.label.stdevpShoutaverageUsd = Desviacion tipica (USD)
+administrator.dashboard.form.label.averageShoutaverageUsd = Media (USD)
+
+
 administrator.dashboard.form.button.return = Volver

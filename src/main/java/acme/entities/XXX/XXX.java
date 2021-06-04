@@ -8,7 +8,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -27,7 +28,7 @@ public class XXX extends DomainEntity{
 
 	@Column(unique = true)
 	@NotNull
-	@Pattern(regexp = "^\\d{4}-\\d{2}-\\d{2}$",message="yyyy-MM-dd")
+	@DateTimeFormat(pattern="^\\d{4}/\\d{2}/\\d{2}$")
 	protected String fecha;
 	
 	@Temporal(TemporalType.TIMESTAMP)

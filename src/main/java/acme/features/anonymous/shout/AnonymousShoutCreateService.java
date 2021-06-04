@@ -78,7 +78,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		
 	}
 
 	@Override
@@ -93,9 +92,9 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		entity.setMoment(moment);
 		entity.getXxx().setMoment(moment);
 		
-		
-		this.repository2.save(entity.getXxx());
 		this.repository.save(entity);
+		this.repository2.save(entity.getXxx());
+		
 	}
 
 	

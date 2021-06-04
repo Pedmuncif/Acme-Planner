@@ -33,7 +33,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert model != null;
 
 		request.unbind(entity, model,"nTasksPublic", "nTasksPrivate","nTasksFinished", "nTasksNoFinished", "averageWorkload","standardDeviationWorkload",
-			"maxWorkload","minWorkload","averageExecutionPeriod","standardDeviationExecutionPeriod","maxExecutionPeriod","minExecutionPeriod");
+			"maxWorkload","minWorkload","averageExecutionPeriod","standardDeviationExecutionPeriod","maxExecutionPeriod","minExecutionPeriod",
+			"averageShoutaverageEur","stdevpShoutaverageEur","stdevpShoutaverageUSD","averageShoutaverageUSD","nShoutPublic","nShoutNoPublic");
 
 		
 	}
@@ -58,6 +59,14 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		final Integer		maxExecutionPeriod;
 		final Integer		minExecutionPeriod;
 
+		final Integer nShoutPublic;
+		final Integer nShoutNoPublic;
+		final Double stdevpShoutaverageEur;
+		final Double averageShoutaverageEur;
+		final Double stdevpShoutaverageUSD;
+		final Double averageShoutaverageUSD;
+		
+		
 		Calendar calendar;
 		calendar = Calendar.getInstance();
 		final Date now = calendar.getTime();
@@ -78,6 +87,13 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		maxExecutionPeriod = this.repository.maxTaskExecutionPeriod();
 		minExecutionPeriod = this.repository.minTaskExecutionPeriod();
 		
+		nShoutPublic = this.repository.nShoutPublic();
+		nShoutNoPublic = this.repository.nShoutNoPublic();
+		stdevpShoutaverageEur = this.repository.stdevpShoutaverageEur();
+		averageShoutaverageEur = this.repository.averageShoutaverageEur();
+		stdevpShoutaverageUSD = this.repository.stdevpShoutaverageUSD();
+		averageShoutaverageUSD = this.repository.averageShoutaverageUSD();
+		
 		result = new Dashboard();
 		
 		result.setNTasksPublic(nTasksPublic);
@@ -94,6 +110,16 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setStandardDeviationExecutionPeriod(standardDeviationExecutionPeriod);
 		result.setMaxExecutionPeriod(maxExecutionPeriod);
 		result.setMinExecutionPeriod(minExecutionPeriod);
+		
+		
+		result.setNShoutPublic(nShoutPublic);
+		result.setNShoutNoPublic(nShoutNoPublic);
+		result.setStdevpShoutaverageEur(stdevpShoutaverageEur);
+		result.setAverageShoutaverageEur(averageShoutaverageEur);
+		result.setStdevpShoutaverageUSD(stdevpShoutaverageUSD);
+		result.setAverageShoutaverageUSD(averageShoutaverageUSD);
+	
+		
 		
 		return result;
 
