@@ -8,3 +8,12 @@ anonymous.shout.list.label.moment = Moment
 anonymous.shout.list.label.text = Text
 anonymous.shout.list.label.author = Author
 anonymous.shout.list.label.info = Info
+
+anonymous.xxx.form.label.fecha = Date
+anonymous.xxx.form.label.amount = Amount
+anonymous.xxx.form.label.flag = Flag
+
+anonymous.xxx.list.label.id = ID
+anonymous.xxx.list.label.fecha = Date
+anonymous.xxx.list.label.amount = Amount
+anonymous.xxx.list.label.flag = Flag
