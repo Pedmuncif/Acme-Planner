@@ -18,3 +18,7 @@ anonymous.xxx.list.label.id = ID
 anonymous.xxx.list.label.fecha = Fecha
 anonymous.xxx.list.label.amount = Cantidad
 anonymous.xxx.list.label.flag = Bandera
+
+anonymous.xxx.error.entero = Debe tener 10 o menos digitos
+anonymous.xxx.error.decimales = Debe tener 2 o menos decimales
+anonymous.xxx.error.null = No puede estar vacio

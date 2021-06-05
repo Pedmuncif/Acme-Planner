@@ -17,3 +17,7 @@ anonymous.xxx.list.label.id = ID
 anonymous.xxx.list.label.fecha = Date
 anonymous.xxx.list.label.amount = Amount
 anonymous.xxx.list.label.flag = Flag
+
+anonymous.xxx.error.entero = Number must be less than 10 digits
+anonymous.xxx.error.decimales = Fraction must be less than 2 digits
+anonymous.xxx.error.null = Can not be null

@@ -26,7 +26,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 	@Override
 	public boolean authorise(final Request<Shout> request) {
 		assert request != null;
-		
+	
 		return true;
 	}
 
@@ -46,7 +46,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "author","text","info","xxx.fecha","xxx.amount","xxx.flag");
+		request.unbind(entity, model, "author","text","info","xxx.fecha","xxx.amount.amount","xxx.amount.currency","xxx.flag");
 		
 	}
 
@@ -75,15 +75,41 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	@Override
 	public void validate(final Request<Shout> request, final Shout entity, final Errors errors) {
+			
+		final String[] trozo =  request.getModel().getString("xxx.amount.amount").split(".");
+//		errors.state(request, trozo[0].length()!=0,  "xxx.amount.amount", "anonymous.xxx.error.null");
+		
+		
+		if(trozo.length>0) {
+			System.out.println("--->IF1 "+trozo.length);
+			final int entero = trozo[0].length();
+			errors.state(request, entero<=10,  "xxx.amount.amount", "anonymous.xxx.error.entero");
+			
+			if(trozo.length == 2) {
+				System.out.println("--->IF2 "+trozo.length);
+				final int decimales = trozo[1].length();
+				errors.state(request, decimales>2,  "xxx.amount.amount", "anonymous.xxx.error.decimales");
+			}
+			
+		}
+			
+		
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+
+			
+		
+		
 	}
 
 	@Override
 	public void create(final Request<Shout> request, final Shout entity) {
 		assert request != null;
 		assert entity != null;
+		
+		
 		
 		Date moment;
 		
@@ -92,6 +118,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		entity.setMoment(moment);
 		entity.getXxx().setMoment(moment);
 		
+	
 		this.repository.save(entity);
 		this.repository2.save(entity.getXxx());
 		
