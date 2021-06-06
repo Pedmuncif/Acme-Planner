@@ -1,5 +1,6 @@
 package acme.features.anonymous.shout;
 
+import java.util.Collection;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +47,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "author","text","info","xxx.fecha","xxx.amount.amount","xxx.amount.currency","xxx.flag");
+		request.unbind(entity, model, "author","text","info","xxx.fecha","xxx.amount","xxx.flag");
 		
 	}
 
@@ -75,33 +76,38 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	@Override
 	public void validate(final Request<Shout> request, final Shout entity, final Errors errors) {
-			
-		final String[] trozo =  request.getModel().getString("xxx.amount.amount").split(".");
-//		errors.state(request, trozo[0].length()!=0,  "xxx.amount.amount", "anonymous.xxx.error.null");
-		
-		
-		if(trozo.length>0) {
-			System.out.println("--->IF1 "+trozo.length);
-			final int entero = trozo[0].length();
-			errors.state(request, entero<=10,  "xxx.amount.amount", "anonymous.xxx.error.entero");
-			
-			if(trozo.length == 2) {
-				System.out.println("--->IF2 "+trozo.length);
-				final int decimales = trozo[1].length();
-				errors.state(request, decimales>2,  "xxx.amount.amount", "anonymous.xxx.error.decimales");
+		final Collection<XXX> co = this.repository2.findMany();
+		boolean b = true;
+		final String fechaAux = request.getModel().getString("xxx.fecha");
+		errors.state(request, !fechaAux.isEmpty(), "xxx.fecha", "anonymous.xxx.error.null");
+		for(final XXX x: co) {
+			if(x.getFecha().equals(fechaAux)) {
+				b=false;
+				break;
 			}
 			
 		}
-			
+		errors.state(request, b, "xxx.fecha", "anonymous.xxx.error.fechaIgual");
+		
+		
+		
+		final String amount =  request.getModel().getString("xxx.amount");
+		errors.state(request, !amount.isEmpty(), "xxx.amount", "anonymous.xxx.error.amountVacio");
+		
+		
+		
+		final String[] trozo =  request.getModel().getString("xxx.amount").split(" ");
+		boolean bc = false;
+		if(trozo[0].equals("EUR") || trozo[0].equals("USD") ) {
+			bc = true;
+		}
+		errors.state(request, bc, "xxx.amount", "anonymous.xxx.error.currency");
 		
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
 
-
-			
-		
-		
+	
 	}
 
 	@Override

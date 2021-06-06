@@ -28,8 +28,8 @@ public class Dashboard implements Serializable {
 	Integer		minExecutionPeriod;
 	
 	
-	Integer     nShoutNoPublic;
-	Integer 	nShoutPublic;
+	Double      nShoutNoPublic;
+	Double 	    nShoutPublic;
 	Double 		averageShoutaverageEur;
 	Double 		stdevpShoutaverageEur;
 	Double 		stdevpShoutaverageUSD;

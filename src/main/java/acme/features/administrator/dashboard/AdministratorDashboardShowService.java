@@ -59,8 +59,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		final Integer		maxExecutionPeriod;
 		final Integer		minExecutionPeriod;
 
-		final Integer nShoutPublic;
-		final Integer nShoutNoPublic;
+		final Double nShoutPublic;
+		final Double nShoutNoPublic;
 		final Double stdevpShoutaverageEur;
 		final Double averageShoutaverageEur;
 		final Double stdevpShoutaverageUSD;

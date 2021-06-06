@@ -18,8 +18,8 @@ administrator.dashboard.form.label.standardDeviationExecutionPeriod = Standard D
 administrator.dashboard.form.label.maxExecutionPeriod = Max Execution Period (Days)
 administrator.dashboard.form.label.minExecutionPeriod = Min Execution Period (Days)
 
-administrator.dashboard.form.label.nShoutPublic = Shout Public Num
-administrator.dashboard.form.label.nShoutNoPublic = Shout No public num
+administrator.dashboard.form.label.nShoutPublic = Shout Public Ratio
+administrator.dashboard.form.label.nShoutNoPublic = Shout No public Ratio
 administrator.dashboard.form.title.shouts-indicators = Shout indicators
 administrator.dashboard.form.label.stdevpShoutaverageEur = Standard Deviation (EUR)
 administrator.dashboard.form.label.averageShoutaverageEur = Average (EUR)
