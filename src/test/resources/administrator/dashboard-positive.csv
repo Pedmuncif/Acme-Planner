@@ -1,2 +1,2 @@
 nTasksPublic,nTasksPrivate,nTasksFinished,nTasksNoFinished,averageWorkload,standardDeviationWorkload,maxWorkload,minWorkload,averageExecutionPeriod,standardDeviationExecutionPeriod,maxExecutionPeriod,minExecutionPeriod
-17, 3, 11, 9, 135.00, 65.38, 300, 100, 4.45, 9.43, 34, 0
+17, 3, 11, 9, 37.05, 30.00, 97.00, 1.00, 4.45, 9.43, 34, 0

@@ -186,7 +186,7 @@
 		<property name="startMoment" value="2021/04/23 18:00"/>
 		<property name="finishMoment" value="2021/04/24 20:00"/>
 		<property name="workload" value="26.00"/>
-		<property name="link" value="http://www.example.org"/>
+		<property name="link" value=""/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
 	
@@ -196,7 +196,7 @@
 		<property name="startMoment" value="2021/04/24 19:00"/>
 		<property name="finishMoment" value="2021/04/25 20:00"/>
 		<property name="workload" value="25.00"/>
-		<property name="link" value="http://www.example.org"/>
+		<property name="link" value=""/>
 		<property name="status" value="PUBLIC"></property>
 	</bean>
 	
@@ -267,7 +267,7 @@
 	</bean>
 	
 	<bean id="shout07" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/05/11 12:00"/>
+		<property name="moment" value="2021/05/20 12:00"/>
 		<property name="author" value="Pedro Jesus"/>
 		<property name="text" value="Viva el Cadiz"/>
 		<property name="info" value="https://www.cadizcf.com"></property>
