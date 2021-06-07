@@ -1,6 +1,7 @@
 package acme.testing.administrator.dashboard;
 
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -25,7 +26,7 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/dashboard-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(10)
+	@Order(20)
 	public void showAdministratorDashboardPositive(final String nTasksPublic, final String nTasksPrivate, final String nTasksFinished, 
 		final String nTasksNoFinished, final String averageWorkload, final String standardDeviationWorkload, final String maxWorkload, final String minWorkload, 
 		final String averageExecutionPeriod, final String standardDeviationExecutionPeriod, final String maxExecutionPeriod, final String minExecutionPeriod) {
@@ -47,4 +48,12 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 		super.checkInputBoxHasValue("minExecutionPeriod", minExecutionPeriod);
 		super.signOut();
 	}
+	
+	@Test
+	@Order(10)
+	public void accessNotAuthorised() {
+				
+		super.navigate("/administrator/dashboard/show", null);
+		super.checkPanicExists();
+		}
 }

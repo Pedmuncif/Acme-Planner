@@ -1,6 +1,7 @@
 package acme.testing.authenticated.tasks;
 
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -29,7 +30,7 @@ public class AuthenticatedListPublicFinishedTasksTest extends AcmePlannerTest{
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/task/list-task-public-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(10)
+	@Order(20)
 	public void listShowAuthenticatedPublicFinishedTasks(final int recordIndex, final String title, final String description, final String startMoment, 
 		final String finishMoment, final String workload, final String link, final String status) {
 		
@@ -56,4 +57,11 @@ public class AuthenticatedListPublicFinishedTasksTest extends AcmePlannerTest{
 
 	}
 
+	@Test
+	@Order(10)
+	public void accessNotAuthorised() {
+				
+		super.navigate("/authenticated/task/list", null);
+		super.checkPanicExists();
+		}
 }

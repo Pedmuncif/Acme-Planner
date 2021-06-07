@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.tasks.Task;
+import acme.entities.tasks.TaskStatus;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
@@ -19,7 +20,15 @@ public class AnonymousTaskShowService
 	@Override
 	public boolean authorise(final Request<Task> request) {
 		assert request != null;
-		return true;
+		
+		boolean result;
+		Task task;
+		int taskId;
+		
+		taskId = request.getModel().getInteger("id");
+		task = this.repository.findOneTaskById(taskId);
+		result = task.getStatus().equals(TaskStatus.PUBLIC);
+		return result;
 	}
 
 	@Override
@@ -42,7 +51,11 @@ public class AnonymousTaskShowService
 		int id;
 		
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneTaskById(id);
+		final Task task = this.repository.findOneTaskById(id);
+		
+		result = task;
+		
+		
 		
 		return result;
 	}
