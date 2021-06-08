@@ -348,7 +348,7 @@ Task
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 XXX
 --
-+ fecha: String{Unique, NotNull,Pattern ("\\d{4}-\\d{2}-\\d{2}$")}
++ fecha: String{Unique, NotBlank,Pattern ("\\d{4}-\\d{2}-\\d{2}$")}
 + moment: Date{NotNull, Temporal(TIMESTAMP),Past}
 + amount: Money{NotNull, Valid}
 + flag: Boolean {NotNull}</panel_attributes>

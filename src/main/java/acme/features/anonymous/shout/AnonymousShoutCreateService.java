@@ -1,5 +1,7 @@
 package acme.features.anonymous.shout;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,6 +66,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		result.setMoment(moment);
 //		result.setInfo("http://example.org");
 		final XXX x = new XXX();
+	
 		x.setMoment(moment);
 		result.setXxx(x);
 		
@@ -79,6 +82,25 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		errors.state(request, !fechaAux.isEmpty(), "xxx.fecha", "anonymous.xxx.error.null");
 		final XXX x = this.repository2.findXXXByFecha(fechaAux);
 		errors.state(request, x==null, "xxx.fecha", "anonymous.xxx.error.fechaIgual");
+		
+		
+		
+		////
+		
+		final String xxxDateString = entity.getXxx().getFecha();
+        final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        final LocalDate xxxDate = LocalDate.parse(xxxDateString, dtf);
+
+        //Get current date as LocalDate
+        final LocalDate today = LocalDate.now();
+
+        errors.state(request, xxxDate.isEqual(today), "xxx.fecha", "anonymous.xxx.error.dateCurrent");
+
+  
+		
+		////
+		
+		
 		
 		
 		//Validacion de cantidad vacia.
