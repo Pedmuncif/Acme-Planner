@@ -31,15 +31,18 @@ public class AnonymousCreateShoutTest extends AcmePlannerTest {
 	// Test cases -------------------------------------------------------------
 
 	@ParameterizedTest
-	@CsvFileSource(resources = "/anonymous/shout/create-shout-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/anonymous/shout/create-shout-xxx-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveCreateShout(final int recordIndex, final String author, final String text, final String info) {
+	public void positiveCreateShout(final int recordIndex, final String author, final String text, final String info, final String xxxfecha, final String xxxamount, final String xxxflag ) {
 	
 		super.clickOnMenu("Anonymous", "Create Shout");
 		
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
+		super.fillInputBoxIn("xxx.fecha", xxxfecha);
+		super.fillInputBoxIn("xxx.amount", xxxamount);
+		super.fillInputBoxIn("xxx.flag", xxxflag);
 		
 		super.clickOnSubmitButton("Shout!");		
 		super.clickOnMenu("Anonymous", "List Shouts");
@@ -47,17 +50,23 @@ public class AnonymousCreateShoutTest extends AcmePlannerTest {
 		super.checkColumnHasValue(recordIndex, 1, author);
 		super.checkColumnHasValue(recordIndex, 2, text);
 		super.checkColumnHasValue(recordIndex, 3, info);
+		super.checkColumnHasValue(recordIndex, 4, xxxfecha);
+		super.checkColumnHasValue(recordIndex, 5, xxxamount);
+		super.checkColumnHasValue(recordIndex, 6, xxxflag);
 	}
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/anonymous/shout/create-shout-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/anonymous/shout/create-shout-xxx-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
-	public void negativeCreateShout(final String author, final String text, final String info) {
+	public void negativeCreateShout(final String author, final String text, final String info, final String xxxfecha, final String xxxamount, final String xxxflag) {
 		super.clickOnMenu("Anonymous", "Create Shout");
 		
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
+		super.fillInputBoxIn("xxx.fecha", xxxfecha);
+		super.fillInputBoxIn("xxx.amount", xxxamount);
+		super.fillInputBoxIn("xxx.flag", xxxflag);
 		
 		super.clickOnSubmitButton("Shout!");
 		super.checkErrorsExist();

@@ -23,4 +23,4 @@ anonymous.xxx.list.label.flag = Bandera
 anonymous.xxx.error.null = No puede estar vacio
 anonymous.xxx.error.fechaIgual = La fecha ya existe
 anonymous.xxx.error.amountVacio = No puede estar vacio
-anonymous.xxx.error.currency = Solo se permiten EUR o USD
+anonymous.xxx.error.currency = Solo se permiten EUR o USD y debe seguir cantidad moneda

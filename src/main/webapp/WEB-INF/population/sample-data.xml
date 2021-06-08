@@ -335,5 +335,19 @@
 		<property name="text" value="MI ULTIMO GRITO"/>
 		<property name="info" value=""></property>
 	</bean>
+	
+	<bean id="shout17" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/06/08 13:39"/>
+		<property name="author" value="Prueba"/>
+		<property name="text" value="Prueba"/>
+		<property name="info" value=""/>
+		<property name="xxx">
+			<bean class="acme.entities.XXX.XXX">
+				<property name="fecha" value="2021-06-09"/>
+				<property name="amount" value="EUR 200.00"/>
+				<property name="flag" value="false"/>
+			</bean>
+		</property>
+	</bean>
 </beans>
 

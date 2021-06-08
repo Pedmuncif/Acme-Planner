@@ -27,7 +27,7 @@ public class XXX extends DomainEntity{
 
 	@Column(unique = true)
 	@NotNull
-	@Pattern(regexp="^\\d{4}-\\d{2}-\\d{2}$")
+	@Pattern(regexp = "\\d{4}-\\d{2}-\\d{2}$")
 	protected String fecha;
 	
 	@Temporal(TemporalType.TIMESTAMP)

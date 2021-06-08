@@ -1,6 +1,5 @@
 package acme.features.anonymous.shout;
 
-import java.util.Collection;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,7 +58,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		Date moment;
 		
 		moment = new Date(System.currentTimeMillis()-1);
-		
 		result = new Shout();
 //		result.setAuthor("John Doe");
 //		result.setText("Lorem ipsum!");
@@ -76,32 +74,32 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	@Override
 	public void validate(final Request<Shout> request, final Shout entity, final Errors errors) {
-		final Collection<XXX> co = this.repository2.findMany();
-		boolean b = true;
+		//Validacion de fecha unica.
 		final String fechaAux = request.getModel().getString("xxx.fecha");
 		errors.state(request, !fechaAux.isEmpty(), "xxx.fecha", "anonymous.xxx.error.null");
-		for(final XXX x: co) {
-			if(x.getFecha().equals(fechaAux)) {
-				b=false;
-				break;
-			}
-			
-		}
-		errors.state(request, b, "xxx.fecha", "anonymous.xxx.error.fechaIgual");
+		final XXX x = this.repository2.findXXXByFecha(fechaAux);
+		errors.state(request, x==null, "xxx.fecha", "anonymous.xxx.error.fechaIgual");
 		
 		
-		
+		//Validacion de cantidad vacia.
 		final String amount =  request.getModel().getString("xxx.amount");
 		errors.state(request, !amount.isEmpty(), "xxx.amount", "anonymous.xxx.error.amountVacio");
-		
-		
-		
+		//Validacion de la moneda (lenguaje).
 		final String[] trozo =  request.getModel().getString("xxx.amount").split(" ");
-		boolean bc = false;
-		if(trozo[0].equals("EUR") || trozo[0].equals("USD") ) {
-			bc = true;
+		boolean bc;
+		bc = false;	
+		if(request.getLocale().toString().equals("en")) {
+			if(trozo[0].equals("EUR") || trozo[0].equals("USD") ) {
+				bc = true;
+			}
+		}else {
+			if(trozo[1].equals("EUR") || trozo[1].equals("USD") ) {
+				bc = true;
+			}
 		}
 		errors.state(request, bc, "xxx.amount", "anonymous.xxx.error.currency");
+		
+		
 		
 		assert request != null;
 		assert entity != null;
