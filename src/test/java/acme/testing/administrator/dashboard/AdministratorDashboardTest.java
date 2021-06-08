@@ -20,6 +20,8 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 	 *  En esta feature estamos comprobando que inicie sesion como administrador y checkee cada una de las variables de las que 
 	 *  dispone esta entidad. Como estamos comprobando casos positivos, estos casos han sido creados con el fin de cumplir las 
 	 *  restricciones de cada una de las propiedades descritas anteriormente.
+	 *  En el caso negativo, un usuario con un rol no permitido no puede acceder a la vista del dashboard. Solo un administrador
+	 *  puede acceder.
 	 * 
 	 * 
 	 */

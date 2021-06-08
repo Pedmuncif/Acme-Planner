@@ -24,6 +24,8 @@ public class AuthenticatedListPublicFinishedTasksTest extends AcmePlannerTest{
 	 * Esta feature se encarga de mostrar para usuarios autenticados una lista de las tareas finalizadas. 
 	 * Primero se comprueba que los valores en la lista estan bien, y luego comprueba que la tarea tenga cada atributo 
 	 * cumpliendo con las restricciones comentadas anteriormente.
+	 * Para el caso negativo, un usuario con rol no permitido no puede acceder a la lista de tareas finalizadas. Solo los usuarios 
+	 * autenticados pueden acceder.
 	 * 
 	 * 
 	 */
