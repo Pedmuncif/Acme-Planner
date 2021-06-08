@@ -1,6 +1,7 @@
 package acme.testing.anonymous.tasks;
 
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -23,8 +24,8 @@ public class AnonymousListPublicNonFinishedTasksTest extends AcmePlannerTest{
 	 * Esta feature se encarga de mostrar para usuarios anónimos una lista de las tareas finalizadas. 
 	 * Primero se comprueba que los valores en la lista estan bien, y luego comprueba que la tarea tenga cada atributo 
 	 * cumpliendo con las restricciones comentadas anteriormente.
-	 * 
-	 * 
+	 * Para el caso negativo, un usuario con rol no permitido no puede acceder a la lista de tareas no finalizadas. Solo los usuarios 
+	 * anónimos pueden acceder.	  
 	 */
 	
 	
@@ -52,5 +53,12 @@ public class AnonymousListPublicNonFinishedTasksTest extends AcmePlannerTest{
         super.checkInputBoxHasValue("status", status);
 	}
 
-
+	@Test
+	@Order(10)
+	public void accessNotAuthorised() {
+				
+		super.signIn("administrator", "administrator");
+		super.navigate("/anonymous/task/list", null);
+		super.checkPanicExists();
+		}
 }
