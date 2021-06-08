@@ -1,11 +1,11 @@
 recordIndex,moment,author,text,info,xxx.fecha,xxx.amount,xxx.flag
-0,2021/05/11 12:00,Pedro Jesus,Viva el Cadiz, https://www.cadizcf.com
-1,2021/05/20 19:20,Andrea,Por FIN!!,https://youtube.com/
-2,2021/05/20 20:39,Pedro Pablo,Viva el Jerez,
-3,2021/05/22 19:45,Jose Francisco,Me gusta las hambuergesas,https://burgerking.com/
-4,2021/05/23 19:23,Juan Carlos,Alo presidentes!,https://youtube.com/
-5,2021/05/23 19:24,Jesse Pinkman,MI ULTIMO GRITO,
-6,2021/05/23 19:30,Javier Hidalgo,Bienvenidos a todos!,http://www.realmadrid.com
-7,2021/05/24 12:30,Enrique Moreno,Bienvenidos a Acme-Planner,
-8,2021/05/24 17:10,Heisenberg,Say my name!,https://amc.com/
-9,2021/06/09 18:39,Prueba,Prueba,,2021-06-09,EUR 200.00,false
+0,2021/05/20 19:20,Andrea,Por FIN!!,https://youtube.com/,2021-05-20,USD 432.32,true
+1,2021/05/21 12:00,Pedro Jesus,Viva el Cadiz, https://www.cadizcf.com,2021-05-21,EUR 45.19,false
+2,2021/05/22 19:45,Jose Francisco,Me gusta las hambuergesas,https://burgerking.com/,2021-05-22,USD 111.43,true
+3,2021/05/23 19:23,Juan Carlos,Alo presidentes!,https://youtube.com/,2021-05-23,EUR 23.65,false
+4,2021/05/24 17:10,Heisenberg,Say my name!,https://amc.com/,2021-05-24,USD 126.54,false
+5,2021/05/26 20:39,Pedro Pablo,Viva el Jerez,,2021-05-26,USD 156.76,false
+6,2021/05/28 19:24,Jesse Pinkman,MI ULTIMO GRITO,,2021-05-28,EUR 654.32,true
+7,2021/05/29 12:30,Enrique Moreno,Bienvenidos a Acme-Planner,,2021-05-29,EUR 329.42,true
+8,2021/05/30 19:30,Javier Hidalgo,Bienvenidos a todos!,http://www.realmadrid.com,2021-05-30,USD 431.55,false
+9,2021/06/08 13:39,Prueba,Prueba,,2021-06-08,EUR 200.00,true

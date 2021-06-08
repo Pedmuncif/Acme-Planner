@@ -28,11 +28,20 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 	@Order(10)
 	public void showAdministratorDashboardPositive(final String nTasksPublic, final String nTasksPrivate, final String nTasksFinished, 
 		final String nTasksNoFinished, final String averageWorkload, final String standardDeviationWorkload, final String maxWorkload, final String minWorkload, 
-		final String averageExecutionPeriod, final String standardDeviationExecutionPeriod, final String maxExecutionPeriod, final String minExecutionPeriod) {
+		final String averageExecutionPeriod, final String standardDeviationExecutionPeriod, final String maxExecutionPeriod, final String minExecutionPeriod,final String nShoutNoPublic, 
+		final String nShoutPublic, final String averageShoutaverageEur, final String stdevpShoutaverageEur, final String stdevpShoutaverageUSD,final String averageShoutaverageUSD) {
 		
 		super.signIn("administrator", "administrator");
 		super.clickOnMenu("Administrator", "Dashboard");
 		super.checkNotPanicExists();
+		
+		super.checkInputBoxHasValue("nShoutNoPublic", nShoutNoPublic);
+		super.checkInputBoxHasValue("nShoutPublic", nShoutPublic);
+		super.checkInputBoxHasValue("averageShoutaverageEur", averageShoutaverageEur);
+		super.checkInputBoxHasValue("stdevpShoutaverageEur", stdevpShoutaverageEur);
+		super.checkInputBoxHasValue("stdevpShoutaverageUSD", stdevpShoutaverageUSD);
+		super.checkInputBoxHasValue("averageShoutaverageUSD", averageShoutaverageUSD);
+		
 		super.checkInputBoxHasValue("nTasksPublic", nTasksPublic);
 		super.checkInputBoxHasValue("nTasksPrivate", nTasksPrivate);
 		super.checkInputBoxHasValue("nTasksFinished", nTasksFinished);

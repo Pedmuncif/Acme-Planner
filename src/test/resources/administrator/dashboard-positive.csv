@@ -1,2 +1,2 @@
-nTasksPublic,nTasksPrivate,nTasksFinished,nTasksNoFinished,averageWorkload,standardDeviationWorkload,maxWorkload,minWorkload,averageExecutionPeriod,standardDeviationExecutionPeriod,maxExecutionPeriod,minExecutionPeriod
-17, 3, 11, 9, 135.00, 65.38, 300, 100, 4.45, 9.43, 34, 0
+nShoutNoPublic,nShoutPublic,averageShoutaverageEur,stdevpShoutaverageEur,stdevpShoutaverageUSD,averageShoutaverageUSD,nTasksPublic,nTasksPrivate,nTasksFinished,nTasksNoFinished,averageWorkload,standardDeviationWorkload,maxWorkload,minWorkload,averageExecutionPeriod,standardDeviationExecutionPeriod,maxExecutionPeriod,minExecutionPeriod
+33.00,27.00,211.18,242.10,147.87,251.72,17, 3, 11, 9, 135.00, 65.38, 300, 100, 4.45, 9.43, 34, 0

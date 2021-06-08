@@ -23,7 +23,7 @@ public class AnonymousListShoutTest extends AcmePlannerTest {
 	 */
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/anonymous/shout/list-shout.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/anonymous/shout/list-shout-xxx.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void listAllShouts(final int recordIndex,final String moment, final String author, final String text, final String info, final String xxxfecha, final String xxxamount, final String xxxflag) {
 		super.clickOnMenu("Anonymous", "List Shouts");

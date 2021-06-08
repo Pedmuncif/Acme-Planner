@@ -253,31 +253,36 @@
 	</bean>
 	
 	<bean id="shout05" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/05/24 12:30"/>
+		<property name="moment" value="2021/05/29 12:30"/>
 		<property name="author" value="Enrique Moreno"/>
 		<property name="text" value="Bienvenidos a Acme-Planner"/>
 		<property name="info" value=""></property>
+		<property name="xxx" ref="xxx10"/>
 	</bean>
 	
 	<bean id="shout06" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/05/23 19:30"/>
+		<property name="moment" value="2021/05/30 19:30"/>
 		<property name="author" value="Javier Hidalgo"/>
 		<property name="text" value="Bienvenidos a todos!"/>
 		<property name="info" value="http://www.realmadrid.com"></property>
+		<property name="xxx" ref="xxx09"/>
 	</bean>
 	
 	<bean id="shout07" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/05/11 12:00"/>
+		<property name="moment" value="2021/05/21 12:00"/>
 		<property name="author" value="Pedro Jesus"/>
 		<property name="text" value="Viva el Cadiz"/>
 		<property name="info" value="https://www.cadizcf.com"></property>
+		<property name="xxx" ref="xxx03"/>
 	</bean>
 	
 	<bean id="shout08" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/05/20 20:39"/>
+		<property name="moment" value="2021/05/26 20:39"/>
 		<property name="author" value="Pedro Pablo"/>
 		<property name="text" value="Viva el Jerez"/>
 		<property name="info" value=""></property>
+		<property name="xxx" ref="xxx07"/>
+		
 	</bean>
 	
 	<bean id="shout09" class="acme.entities.shouts.Shout">
@@ -285,6 +290,7 @@
 		<property name="author" value="Jose Francisco"/>
 		<property name="text" value="Me gusta las hambuergesas"/>
 		<property name="info" value="https://burgerking.com/"></property>
+		<property name="xxx" ref="xxx06"/>
 	</bean>
 
 	<bean id="shout10" class="acme.entities.shouts.Shout">
@@ -313,6 +319,7 @@
 		<property name="author" value="Juan Carlos"/>
 		<property name="text" value="Alo presidentes!"/>
 		<property name="info" value="https://youtube.com/"></property>
+		<property name="xxx" ref="xxx05"/>
 	</bean>
 	
 	<bean id="shout14" class="acme.entities.shouts.Shout">
@@ -320,6 +327,7 @@
 		<property name="author" value="Andrea"/>
 		<property name="text" value="Por FIN!!"/>
 		<property name="info" value="https://youtube.com/"></property>
+		<property name="xxx" ref="xxx04"/>
 	</bean>
 	
 	<bean id="shout15" class="acme.entities.shouts.Shout">
@@ -327,13 +335,15 @@
 		<property name="author" value="Heisenberg"/>
 		<property name="text" value="Say my name!"/>
 		<property name="info" value="https://amc.com/"></property>
+		<property name="xxx" ref="xxx02"/>
 	</bean>
 	
 	<bean id="shout16" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/05/23 19:24"/>
+		<property name="moment" value="2021/05/28 19:24"/>
 		<property name="author" value="Jesse Pinkman"/>
 		<property name="text" value="MI ULTIMO GRITO"/>
 		<property name="info" value=""></property>
+		<property name="xxx" ref="xxx08"/>
 	</bean>
 	
 	<bean id="shout17" class="acme.entities.shouts.Shout">
@@ -341,13 +351,79 @@
 		<property name="author" value="Prueba"/>
 		<property name="text" value="Prueba"/>
 		<property name="info" value=""/>
-		<property name="xxx">
-			<bean class="acme.entities.XXX.XXX">
-				<property name="fecha" value="2021-06-09"/>
+		<property name="xxx" ref="xxx01"/>
+	</bean>
+	
+	<!--  XXX -->
+	
+	<bean name = "xxx01" class="acme.entities.XXX.XXX">
+				<property name="moment" value="2021/06/08 13:39"/>
+				<property name="fecha" value="2021-06-08"/>
 				<property name="amount" value="EUR 200.00"/>
+				<property name="flag" value="true"/>
+	</bean>
+	
+	<bean name = "xxx02" class="acme.entities.XXX.XXX">
+				<property name="moment" value="2021/05/24 17:10"/>
+				<property name="fecha" value="2021-05-24"/>
+				<property name="amount" value="USD 126.54"/>
 				<property name="flag" value="false"/>
-			</bean>
-		</property>
+	</bean>
+	
+	<bean name = "xxx03" class="acme.entities.XXX.XXX">
+				<property name="moment" value="2021/05/21 12:00"/>
+				<property name="fecha" value="2021-05-21"/>
+				<property name="amount" value="EUR 45.19"/>
+				<property name="flag" value="false"/>
+	</bean>
+	
+	<bean name = "xxx04" class="acme.entities.XXX.XXX">
+				<property name="moment" value="2021/05/20 19:20"/>
+				<property name="fecha" value="2021-05-20"/>
+				<property name="amount" value="USD 432.32"/>
+				<property name="flag" value="true"/>
+	</bean>
+	
+	<bean name = "xxx05" class="acme.entities.XXX.XXX">
+				<property name="moment" value="2021/05/23 19:23"/>
+				<property name="fecha" value="2021-05-23"/>
+				<property name="amount" value="EUR 23.65"/>
+				<property name="flag" value="false"/>
+	</bean>
+	
+	<bean name = "xxx06" class="acme.entities.XXX.XXX">
+				<property name="moment" value="2021/05/22 19:45"/>
+				<property name="fecha" value="2021-05-22"/>
+				<property name="amount" value="USD 111.43"/>
+				<property name="flag" value="true"/>
+	</bean>
+	
+	<bean name = "xxx07" class="acme.entities.XXX.XXX">
+				<property name="moment" value="2021/05/26 20:39"/>
+				<property name="fecha" value="2021-05-26"/>
+				<property name="amount" value="USD 156.76"/>
+				<property name="flag" value="false"/>
+	</bean>
+	
+	<bean name = "xxx08" class="acme.entities.XXX.XXX">
+				<property name="moment" value="2021/05/28 19:24"/>
+				<property name="fecha" value="2021-05-28"/>
+				<property name="amount" value="EUR 654.32"/>
+				<property name="flag" value="true"/>
+	</bean>
+	
+	<bean name = "xxx09" class="acme.entities.XXX.XXX">
+				<property name="moment" value="2021/05/30 19:30"/>
+				<property name="fecha" value="2021-05-30"/>
+				<property name="amount" value="USD 431.55"/>
+				<property name="flag" value="false"/>
+	</bean>
+	
+	<bean name = "xxx10" class="acme.entities.XXX.XXX">
+				<property name="moment" value="2021/05/29 12:30"/>
+				<property name="fecha" value="2021-05-29"/>
+				<property name="amount" value="EUR 329.42"/>
+				<property name="flag" value="true"/>
 	</bean>
 </beans>
 
