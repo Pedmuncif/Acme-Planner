@@ -26,10 +26,11 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/dashboard-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void showAdministratorDashboardPositive(final String nTasksPublic, final String nTasksPrivate, final String nTasksFinished, 
-		final String nTasksNoFinished, final String averageWorkload, final String standardDeviationWorkload, final String maxWorkload, final String minWorkload, 
-		final String averageExecutionPeriod, final String standardDeviationExecutionPeriod, final String maxExecutionPeriod, final String minExecutionPeriod,final String nShoutNoPublic, 
-		final String nShoutPublic, final String averageShoutaverageEur, final String stdevpShoutaverageEur, final String stdevpShoutaverageUSD,final String averageShoutaverageUSD) {
+	public void showAdministratorDashboardPositive(final String nShoutNoPublic,final String nShoutPublic, final String stdevpShoutaverageEur,final String averageShoutaverageEur, 
+		final String stdevpShoutaverageUSD,final String averageShoutaverageUSD,final String nTasksPublic, final String nTasksPrivate, 
+		final String nTasksFinished,final String nTasksNoFinished, final String averageWorkload, 
+		final String standardDeviationWorkload, final String maxWorkload, final String minWorkload, final String averageExecutionPeriod,
+		final String standardDeviationExecutionPeriod, final String maxExecutionPeriod, final String minExecutionPeriod) {
 		
 		super.signIn("administrator", "administrator");
 		super.clickOnMenu("Administrator", "Dashboard");
@@ -37,8 +38,8 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 		
 		super.checkInputBoxHasValue("nShoutNoPublic", nShoutNoPublic);
 		super.checkInputBoxHasValue("nShoutPublic", nShoutPublic);
-		super.checkInputBoxHasValue("averageShoutaverageEur", averageShoutaverageEur);
 		super.checkInputBoxHasValue("stdevpShoutaverageEur", stdevpShoutaverageEur);
+		super.checkInputBoxHasValue("averageShoutaverageEur", averageShoutaverageEur);
 		super.checkInputBoxHasValue("stdevpShoutaverageUSD", stdevpShoutaverageUSD);
 		super.checkInputBoxHasValue("averageShoutaverageUSD", averageShoutaverageUSD);
 		
