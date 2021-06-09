@@ -27,7 +27,7 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 	@CsvFileSource(resources = "/administrator/dashboard-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void showAdministratorDashboardPositive(final String nShoutNoPublic,final String nShoutPublic, final String stdevpShoutaverageEur,final String averageShoutaverageEur, 
-		final String stdevpShoutaverageUSD,final String averageShoutaverageUSD,final String nTasksPublic, final String nTasksPrivate, 
+		final String stdevpShoutaverageUSD,final String averageShoutaverageUSD,final String nShoutbudget,final String nTasksPublic, final String nTasksPrivate, 
 		final String nTasksFinished,final String nTasksNoFinished, final String averageWorkload, 
 		final String standardDeviationWorkload, final String maxWorkload, final String minWorkload, final String averageExecutionPeriod,
 		final String standardDeviationExecutionPeriod, final String maxExecutionPeriod, final String minExecutionPeriod) {
@@ -42,7 +42,7 @@ public class AdministratorDashboardTest extends AcmePlannerTest{
 		super.checkInputBoxHasValue("averageShoutaverageEur", averageShoutaverageEur);
 		super.checkInputBoxHasValue("stdevpShoutaverageUSD", stdevpShoutaverageUSD);
 		super.checkInputBoxHasValue("averageShoutaverageUSD", averageShoutaverageUSD);
-		
+		super.checkInputBoxHasValue("nShoutbudget", nShoutbudget);
 		super.checkInputBoxHasValue("nTasksPublic", nTasksPublic);
 		super.checkInputBoxHasValue("nTasksPrivate", nTasksPrivate);
 		super.checkInputBoxHasValue("nTasksFinished", nTasksFinished);

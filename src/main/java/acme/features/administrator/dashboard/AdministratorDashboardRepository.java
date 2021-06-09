@@ -53,11 +53,11 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	//
 	
 	//@Query("select count(x) FROM Shout x where x.xxx.flag = 0")
-	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100 From Shout x where x.xxx.flag = 0")
+	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100.00 From Shout x where x.xxx.flag = 0")
 	Double nShoutNoPublic();
 	
 	//@Query("select count(x) FROM Shout x where x.xxx.flag = 1")
-	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100 From Shout x where x.xxx.flag = 1")
+	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100.00 From Shout x where x.xxx.flag = 1")
 	Double nShoutPublic();
 
 	@Query("select avg(amount.amount) FROM XXX where  amount.currency = 'EUR' ")
@@ -71,4 +71,8 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	
 	@Query("select STDDEV(amount.amount) FROM XXX where  amount.currency = 'USD'")
 	Double stdevpShoutaverageUSD();
+	
+
+	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100.00 From XXX x where amount.amount = 0.00")
+	Double nShoutbudget();
 }

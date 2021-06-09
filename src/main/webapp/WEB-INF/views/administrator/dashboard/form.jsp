@@ -15,6 +15,7 @@
 	<acme:form-textbox code="administrator.dashboard.form.label.averageShoutaverageEur" path="averageShoutaverageEur"/>
 	<acme:form-textbox code="administrator.dashboard.form.label.stdevpShoutaverageUsd" path="stdevpShoutaverageUSD"/>
 	<acme:form-textbox code="administrator.dashboard.form.label.averageShoutaverageUsd" path="averageShoutaverageUSD"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.averagebudget" path="nShoutbudget"/>
 
 <h2>
 	<acme:message code="administrator.dashboard.form.title.general-indicators"/>

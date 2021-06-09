@@ -25,6 +25,6 @@ administrator.dashboard.form.label.stdevpShoutaverageEur = Standard Deviation (E
 administrator.dashboard.form.label.averageShoutaverageEur = Average (EUR)
 administrator.dashboard.form.label.stdevpShoutaverageUsd = Standard Deviation (USD)
 administrator.dashboard.form.label.averageShoutaverageUsd = Average (USD)
-
+administrator.dashboard.form.label.averagebudget = Shout budget 0 Ratio
 
 administrator.dashboard.form.button.return = Return

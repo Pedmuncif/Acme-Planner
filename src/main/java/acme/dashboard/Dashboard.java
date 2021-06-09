@@ -34,4 +34,5 @@ public class Dashboard implements Serializable {
 	Double 		stdevpShoutaverageEur;
 	Double 		stdevpShoutaverageUSD;
 	Double 		averageShoutaverageUSD;
+	Double 		nShoutbudget;
 }

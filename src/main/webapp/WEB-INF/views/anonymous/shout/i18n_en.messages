@@ -23,4 +23,4 @@ anonymous.xxx.error.null = Can not be null
 anonymous.xxx.error.fechaIgual = Date already exists
 anonymous.xxx.error.amountVacio = Can not be empty
 anonymous.xxx.error.currency = Only USD or EUR are accepted and must follow currency amount 
-anonymous.xxx.error.dateCurrent = DEBE SER FECHA DE HGOY
+anonymous.xxx.error.dateCurrent = The date should be current and formmat dd/mm/yyyy

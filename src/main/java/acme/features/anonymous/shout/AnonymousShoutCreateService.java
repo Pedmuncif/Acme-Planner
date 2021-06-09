@@ -2,6 +2,7 @@ package acme.features.anonymous.shout;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,16 +59,20 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		
 		Shout result;
 		Date moment;
-		
+		Calendar c;
+		c=Calendar.getInstance();
+	
+		System.out.println(Calendar.WEEK_OF_MONTH);
+		c.add(Calendar.DATE, +7);
 		moment = new Date(System.currentTimeMillis()-1);
 		result = new Shout();
 //		result.setAuthor("John Doe");
 //		result.setText("Lorem ipsum!");
 		result.setMoment(moment);
 //		result.setInfo("http://example.org");
-		final XXX x = new XXX();
-	
-		x.setMoment(moment);
+		XXX x;
+		x = new XXX();
+		x.setMoment(c.getTime());
 		result.setXxx(x);
 		
 		
@@ -94,7 +99,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
         //Get current date as LocalDate
         final LocalDate today = LocalDate.now();
 
-        errors.state(request, xxxDate.isEqual(today), "xxx.fecha", "anonymous.xxx.error.dateCurrent");
+       errors.state(request, xxxDate.isEqual(today), "xxx.fecha", "anonymous.xxx.error.dateCurrent");
 
   
 		
@@ -142,7 +147,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		moment = new Date(System.currentTimeMillis() -1);
 				
 		entity.setMoment(moment);
-		entity.getXxx().setMoment(moment);
+		
 		
 	
 		this.repository.save(entity);

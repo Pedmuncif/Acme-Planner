@@ -24,3 +24,4 @@ anonymous.xxx.error.null = No puede estar vacio
 anonymous.xxx.error.fechaIgual = La fecha ya existe
 anonymous.xxx.error.amountVacio = No puede estar vacio
 anonymous.xxx.error.currency = Solo se permiten EUR o USD y debe seguir cantidad moneda
+anonymous.xxx.error.dateCurrent = La fecha debe de ser la actual y formato dd/mm/yyyy

@@ -25,6 +25,6 @@ administrator.dashboard.form.label.stdevpShoutaverageEur = Desviacion tipica (EU
 administrator.dashboard.form.label.averageShoutaverageEur = Media (EUR)
 administrator.dashboard.form.label.stdevpShoutaverageUsd = Desviacion tipica (USD)
 administrator.dashboard.form.label.averageShoutaverageUsd = Media (USD)
-
+administrator.dashboard.form.label.averagebudget = Porcetaje gritos precio 0
 
 administrator.dashboard.form.button.return = Volver

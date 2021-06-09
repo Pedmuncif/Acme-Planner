@@ -34,7 +34,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		request.unbind(entity, model,"nTasksPublic", "nTasksPrivate","nTasksFinished", "nTasksNoFinished", "averageWorkload","standardDeviationWorkload",
 			"maxWorkload","minWorkload","averageExecutionPeriod","standardDeviationExecutionPeriod","maxExecutionPeriod","minExecutionPeriod",
-			"averageShoutaverageEur","stdevpShoutaverageEur","stdevpShoutaverageUSD","averageShoutaverageUSD","nShoutPublic","nShoutNoPublic");
+			"averageShoutaverageEur","stdevpShoutaverageEur","stdevpShoutaverageUSD","averageShoutaverageUSD","nShoutPublic","nShoutNoPublic","nShoutbudget");
 
 		
 	}
@@ -65,6 +65,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		final Double averageShoutaverageEur;
 		final Double stdevpShoutaverageUSD;
 		final Double averageShoutaverageUSD;
+		final Double nShoutbudget;
 		
 		
 		Calendar calendar;
@@ -93,6 +94,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		averageShoutaverageEur = this.repository.averageShoutaverageEur();
 		stdevpShoutaverageUSD = this.repository.stdevpShoutaverageUSD();
 		averageShoutaverageUSD = this.repository.averageShoutaverageUSD();
+		nShoutbudget = this.repository.nShoutbudget();
 		
 		result = new Dashboard();
 		
@@ -118,7 +120,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setAverageShoutaverageEur(averageShoutaverageEur);
 		result.setStdevpShoutaverageUSD(stdevpShoutaverageUSD);
 		result.setAverageShoutaverageUSD(averageShoutaverageUSD);
-	
+		result.setNShoutbudget(nShoutbudget);
 		
 		
 		return result;
