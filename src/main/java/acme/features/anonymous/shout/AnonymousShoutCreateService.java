@@ -1,7 +1,5 @@
 package acme.features.anonymous.shout;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -59,20 +57,15 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		
 		Shout result;
 		Date moment;
-		Calendar c;
-		c=Calendar.getInstance();
-	
-		System.out.println(Calendar.WEEK_OF_MONTH);
-		c.add(Calendar.DATE, +7);
+		
 		moment = new Date(System.currentTimeMillis()-1);
 		result = new Shout();
-//		result.setAuthor("John Doe");
-//		result.setText("Lorem ipsum!");
+
 		result.setMoment(moment);
-//		result.setInfo("http://example.org");
+
 		XXX x;
 		x = new XXX();
-		x.setMoment(c.getTime());
+
 		result.setXxx(x);
 		
 		
@@ -84,27 +77,30 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 	public void validate(final Request<Shout> request, final Shout entity, final Errors errors) {
 		//Validacion de fecha unica.
 		final String fechaAux = request.getModel().getString("xxx.fecha");
+		
+		final boolean bp = fechaAux.matches("^21-\\w{2}\\w{2}-0609$");
+		errors.state(request, bp, "xxx.fecha", "anonymous.xxx.error.pattern");
+		
 		errors.state(request, !fechaAux.isEmpty(), "xxx.fecha", "anonymous.xxx.error.null");
 		final XXX x = this.repository2.findXXXByFecha(fechaAux);
 		errors.state(request, x==null, "xxx.fecha", "anonymous.xxx.error.fechaIgual");
 		
+		// validacion fecha mas de.....
+		final String fechaAux1 = request.getModel().getString("xxx.moment");
 		
 		
-		////
-		
-		final String xxxDateString = entity.getXxx().getFecha();
-        final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
-        final LocalDate xxxDate = LocalDate.parse(xxxDateString, dtf);
+		errors.state(request, !fechaAux1.isEmpty(), "xxx.moment", "anonymous.xxx.error.null");
 
-        //Get current date as LocalDate
-        final LocalDate today = LocalDate.now();
-
-       errors.state(request, xxxDate.isEqual(today), "xxx.fecha", "anonymous.xxx.error.dateCurrent");
-
-  
-		
-		////
-		
+		final Date deadlineAux = request.getModel().getDate("xxx.moment");
+		if(deadlineAux!=null) {
+			Calendar c;
+			c=Calendar.getInstance();
+			c.add(Calendar.DATE, +7);
+			final Date aux = c.getTime();
+			
+			errors.state(request, deadlineAux.after(aux), "xxx.moment", "anonymous.xxx.error.mas");
+		}
+				
 		
 		
 		

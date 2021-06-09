@@ -28,7 +28,7 @@ public class XXX extends DomainEntity{
 
 	@Column(unique = true)
 	@NotBlank
-	@Pattern(regexp = "([12]\\d{3}/(0[1-9]|1[0-2])/(0[1-9]|[12]\\d|3[01]))", message = "anonymous.xxx.error.dateCurrent")
+	@Pattern(regexp = "^21-\\w{2}\\w{2}-0609$", message = "anonymous.xxx.error.pattern")
 	protected String fecha;
 	
 	@Temporal(TemporalType.TIMESTAMP)

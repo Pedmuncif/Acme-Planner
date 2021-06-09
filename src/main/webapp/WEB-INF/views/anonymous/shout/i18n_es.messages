@@ -13,15 +13,17 @@ anonymous.shout.list.label.info = Info
 anonymous.xxx.form.label.fecha = Fecha
 anonymous.xxx.form.label.amount = Cantidad
 anonymous.xxx.form.label.flag = Bandera
+anonymous.xxx.form.label.deadline = Fecha final
 
 anonymous.xxx.list.label.id = ID
 anonymous.xxx.list.label.fecha = Fecha
 anonymous.xxx.list.label.amount = Cantidad
-anonymous.xxx.list.label.flag = Bandera
+anonymous.xxx.list.label.flag = Importante
 
 
 anonymous.xxx.error.null = No puede estar vacio
 anonymous.xxx.error.fechaIgual = La fecha ya existe
 anonymous.xxx.error.amountVacio = No puede estar vacio
 anonymous.xxx.error.currency = Solo se permiten EUR o USD y debe seguir cantidad moneda
-anonymous.xxx.error.dateCurrent = La fecha debe de ser la actual y formato dd/mm/yyyy
+anonymous.xxx.error.pattern = El formato debe ser dd/mm/yyyy
+anonymous.xxx.error.mas = La fecha debe ser posterior a una semana
