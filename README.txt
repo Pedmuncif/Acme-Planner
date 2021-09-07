@@ -10,7 +10,4 @@
 
 Usuario de Clever Cloud asociado a GitHub.
 
-- Usuario: pedmuncif 
-- Contraseña: acmeplannerg321
-
 - URL del repositorio en GitHub: https://github.com/Pedmuncif/Acme-Planner.git
