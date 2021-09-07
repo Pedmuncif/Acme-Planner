@@ -18,10 +18,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	
-	<name>Acme-Planner</name>
-	<description>This is the Acme-Planner for the students of Design &amp; Testing.</description>
+	<name>Acme-Work-Plans</name>
+	<description>Acme Work-Plans, Inc. is a world-wide company that specialises in managing work plans.  They wish you to produce a web information system that satisfies their requirements, which are described below.  The project will be initially launched in LATAM and the Commonwealth of Nations. </description>
 
-	<artifactId>Acme-Planner</artifactId>
+	<artifactId>Acme-Work-Plans</artifactId>
 	<version>21.6</version>
 	<packaging>war</packaging>
 
