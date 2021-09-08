@@ -10,4 +10,4 @@
 
 Usuario de Clever Cloud asociado a GitHub.
 
-- URL del repositorio en GitHub: https://github.com/Pedmuncif/Acme-Planner.git
+- URL del repositorio en GitHub: https://github.com/Pedmuncif/Acme-Work-Plans.git
