@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 import acme.framework.helpers.StringHelper;
 
-public class AcmePlannerTest extends AcmeTest{
+public class AcmeWorkPlansTest extends AcmeTest{
 	
 	// Internal state ---------------------------------------------------------
 
