@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 import acme.framework.helpers.StringHelper;
 
-public class AcmePlannerTest extends AcmeTest{
+public class AcmeWorkPlansTest extends AcmeTest{
 	
 	// Internal state ---------------------------------------------------------
 
@@ -16,7 +16,7 @@ public class AcmePlannerTest extends AcmeTest{
 		public void beforeAll() {
 			super.beforeAll();
 
-			super.setBaseCamp("http", "localhost", "8080", "/Acme-Planner", "/master/welcome", "?language=en&debug=true");
+			super.setBaseCamp("http", "localhost", "8080", "/Acme-Work-Plans", "/master/welcome", "?language=en&debug=true");
 			super.setAutoPausing(true);
 			
 			this.navigateHome();
