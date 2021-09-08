@@ -1,10 +1,8 @@
 recordIndex,title,description,startMoment,finishMoment,workload,link,status,
-0,Task005: Listing Shout,List Shout,2021/03/24 11:30,2021/03/24 14:30,3.00,http://www.example.org,PUBLIC,
-1,Task009: Listing public tasks that are finished.,Listing public tasks that are finished.,2021/05/23 12:00,2021/05/24 14:00,26.00,http://www.example.org,PUBLIC,
-2,Task012: Populate database, Populate database, 2021/05/10 10:00, 2021/05/12 11:00, 48.00, http://www.example.org,PUBLIC
-3,Task014: Change proyect's title, Change proyect's title, 2021/04/24 08:00, 2021/04/27 09:00, 73.00, http://www.example.org,PUBLIC
-4,Task016: Planing proyect, Planing proyect, 2021/04/20 12:00, 2021/04/21 12:00, 24.00, http://www.example.org,PUBLIC
-5,Task017: Creation Announcement, Creation Announcement, 2021/04/23 18:00, 2021/04/24 20:00, 26.00, ,PUBLIC
-6,Task018: Listing Announcement, Listing Announcement, 2021/04/24 19:00, 2021/04/25 20:00, 25.00, ,PUBLIC
-7,Task019: Details Announcement, Details Announcement, 2021/04/25 10:00, 2021/04/26 16:00, 30.00, ,PUBLIC
-8,Task020: Delete and update Announcement, Delete and update Announcement, 2021/04/26 11:00, 2021/04/27 23:00, 36.00, ,PUBLIC
+0,Task002: Creating the data model.,Creating the data model.,2021/09/08 10:00,2021/09/08 11:00,1.00,,PUBLIC,
+1,Task005: Listing Shout,List Shout,2021/07/08 11:30,2021/07/08 14:30,3.00,http://www.example.org,PUBLIC,
+2,Task007: Listing public tasks that aren't finished.,Listing public tasks that aren't finished.,2021/07/08 10:00,2021/07/22 11:00,97.00,http://www.example.org,PUBLIC,
+3,Task009: Listing public tasks that are finished.,Listing public tasks that are finished.,2021/02/08 12:00,2021/02/09 14:00,26.00,http://www.example.org,PUBLIC,
+4,Task010: Displaying the details of any finished task.,Displaying the details of any finished task.,2021/02/08 10:00,2021/02/21 11:00,96.00,http://www.example.org,PUBLIC,
+5,Task019: Details Announcement,Details Announcement,2021/01/25 10:00,2021/01/26 16:00,30.00,,PUBLIC,
+6,Task020: Delete and update Announcement,Delete and update Announcement,2021/02/26 11:00,2021/02/27 23:00,36.00,,PUBLIC
