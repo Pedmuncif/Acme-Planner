@@ -29,13 +29,22 @@ public class AdministratorDashboardTest extends AcmeWorkPlansTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/dashboard-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
-	public void showAdministratorDashboardPositive(final String nTasksPublic, final String nTasksPrivate, final String nTasksFinished, 
+	public void showAdministratorDashboardPositive(final String shoutImportant,final String stdevpShoutaverageEur,final String averageShoutaverageEur, 
+		final String stdevpShoutaverageUSD,final String averageShoutaverageUSD,final String stdevpShoutaverageGBP,final String averageShoutaverageGBP,final String nShoutbudget,final String nTasksPublic, final String nTasksPrivate, final String nTasksFinished, 
 		final String nTasksNoFinished, final String averageWorkload, final String standardDeviationWorkload, final String maxWorkload, final String minWorkload, 
 		final String averageExecutionPeriod, final String standardDeviationExecutionPeriod, final String maxExecutionPeriod, final String minExecutionPeriod) {
 		
 		super.signIn("administrator", "administrator");
 		super.clickOnMenu("Administrator", "Dashboard");
 		super.checkNotPanicExists();
+		super.checkInputBoxHasValue("nShoutImportant", shoutImportant);
+		super.checkInputBoxHasValue("stdevpShoutaverageEur", stdevpShoutaverageEur);
+		super.checkInputBoxHasValue("averageShoutaverageEur", averageShoutaverageEur);
+		super.checkInputBoxHasValue("stdevpShoutaverageUSD", stdevpShoutaverageUSD);
+		super.checkInputBoxHasValue("averageShoutaverageUSD", averageShoutaverageUSD);
+		super.checkInputBoxHasValue("stdevpShoutaverageGbp", stdevpShoutaverageGBP);
+		super.checkInputBoxHasValue("averageShoutaverageGbp", averageShoutaverageGBP);
+		super.checkInputBoxHasValue("nShoutbudget", nShoutbudget);
 		super.checkInputBoxHasValue("nTasksPublic", nTasksPublic);
 		super.checkInputBoxHasValue("nTasksPrivate", nTasksPrivate);
 		super.checkInputBoxHasValue("nTasksFinished", nTasksFinished);
