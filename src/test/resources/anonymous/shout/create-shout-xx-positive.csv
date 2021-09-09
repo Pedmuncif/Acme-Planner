@@ -1,0 +1,9 @@
+recordIndex,author,text,info,keylet,budget,deadline,important
+6,johnny,Esto es una prueba,https://www.example.org,435676:210609,EUR 123.56,2021/10/29 19:24,false
+7,pepeluis,Esto es una prueba,https://www.example.org/,456766:210609,USD 543.87,2021/10/11 12:43,true
+8,luisa,HOLA,,765678:210609,GBP 43.77,2021/09/29 17:45,true
+9,lukas,Estoy triste,https://www.nba.com/,657765:210609,EUR 668.12,2021/10/12 13:22,false
+10,parker,Tengo hambre,,998789:210609,EUR 445.98,2021/10/18 20:22,false
+11,manolo,Estoy muy muy feliz,https://www.example.org/,543267:210609,EUR 10.54,2021/10/01 09:38,false
+12,luisluisluisluisluisluis, esto es una prueba, https://www.ev.us.es/,143267:210609,EUR 32.98,2021/10/05 08:33,true
+13,luisa,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,,654900:210609,EUR 124.65,2021/10/08 16:58,true

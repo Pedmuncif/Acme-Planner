@@ -31,15 +31,20 @@ public class AnonymousCreateShoutTest extends AcmeWorkPlansTest {
 	// Test cases -------------------------------------------------------------
 
 	@ParameterizedTest
-	@CsvFileSource(resources = "/anonymous/shout/create-shout-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/anonymous/shout/create-shout-xx-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveCreateShout(final int recordIndex, final String author, final String text, final String info) {
+	public void positiveCreateShout(final int recordIndex, final String author, final String text, final String info,final String keylet,
+		final String budget,final String deadline,final String important) {
 	
 		super.clickOnMenu("Anonymous", "Create Shout");
 		
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
+		super.fillInputBoxIn("xxx.keylet", keylet);
+		super.fillInputBoxIn("xxx.budget", budget);
+		super.fillInputBoxIn("xxx.deadline", deadline);
+		super.fillInputBoxIn("xxx.important", important);
 		
 		super.clickOnSubmitButton("Shout!");		
 		super.clickOnMenu("Anonymous", "List Shouts");
@@ -47,17 +52,25 @@ public class AnonymousCreateShoutTest extends AcmeWorkPlansTest {
 		super.checkColumnHasValue(recordIndex, 1, author);
 		super.checkColumnHasValue(recordIndex, 2, text);
 		super.checkColumnHasValue(recordIndex, 3, info);
+		super.checkColumnHasValue(recordIndex, 4, keylet);
+		super.checkColumnHasValue(recordIndex, 5, budget);
+		super.checkColumnHasValue(recordIndex, 6, important);
 	}
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/anonymous/shout/create-shout-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/anonymous/shout/create-shout-xx-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
-	public void negativeCreateShout(final String author, final String text, final String info) {
+	public void negativeCreateShout(final String author, final String text, final String info,final String keylet,
+		final String budget,final String deadline,final String important) {
 		super.clickOnMenu("Anonymous", "Create Shout");
 		
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
+		super.fillInputBoxIn("xxx.keylet", keylet);
+		super.fillInputBoxIn("xxx.budget", budget);
+		super.fillInputBoxIn("xxx.deadline", deadline);
+		super.fillInputBoxIn("xxx.important", important);
 		
 		super.clickOnSubmitButton("Shout!");
 		super.checkErrorsExist();
