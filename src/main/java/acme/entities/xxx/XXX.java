@@ -1,4 +1,4 @@
-package acme.entities.tromem;
+package acme.entities.xxx;
 
 
 import java.util.Date;
@@ -19,7 +19,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Tromem extends DomainEntity{
+public class XXX extends DomainEntity{
 
 	/**
 	 * 

@@ -26,4 +26,4 @@ anonymous.xxx.error.amountVacio = Can not be empty
 anonymous.xxx.error.currency = Only USD or EUR or GBP are accepted and must follow currency amount 
 anonymous.xxx.error.pattern = must match pattern “^XXXX$” (where yy, mm, and dd refer to the year, the month, and the day when the shout is created
 anonymous.xxx.error.mas = The date mast be one week later
-
+anonymous.xxx.error.zero = must be greater or equals than 0

@@ -53,32 +53,32 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	//
 	
 //	@Query("select count(x) FROM Shout x where x.xxx.flag = 0")
-//	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100.00 From Shout x where x.tromem.important = 0")
+//	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100.00 From Shout x where x.xxx.important = 0")
 //	Double nShoutNoImportant();
 	
 	//@Query("select count(x) FROM Shout x where x.xxx.flag = 1")
-	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100.00 From Shout x where x.tromem.important = 1")
+	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100.00 From Shout x where x.xxx.important = 1")
 	Double nShoutImportant();
 	
-	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100.00 From Tromem x where budget.amount = 0.00")
+	@Query("select (count(x)  / (Select Count(x) From Shout x ))* 100.00 From XXX x where budget.amount = 0.00")
 	Double nShoutbudget();
 	
-	@Query("select avg(budget.amount) FROM Tromem where  budget.currency = 'EUR' ")
+	@Query("select avg(budget.amount) FROM XXX where  budget.currency = 'EUR' ")
 	Double averageShoutaverageEur();
 	
-	@Query("select STDDEV(budget.amount) FROM Tromem where  budget.currency = 'EUR'")
+	@Query("select STDDEV(budget.amount) FROM XXX where  budget.currency = 'EUR'")
 	Double stdevpShoutaverageEur();
 	
-	@Query("select avg(budget.amount) FROM Tromem where  budget.currency = 'USD' ")
+	@Query("select avg(budget.amount) FROM XXX where  budget.currency = 'USD' ")
 	Double averageShoutaverageUSD();
 	
-	@Query("select STDDEV(budget.amount) FROM Tromem where  budget.currency = 'USD'")
+	@Query("select STDDEV(budget.amount) FROM XXX where  budget.currency = 'USD'")
 	Double stdevpShoutaverageUSD();
 	
-	@Query("select avg(budget.amount) FROM Tromem where  budget.currency = 'GBP' ")
+	@Query("select avg(budget.amount) FROM XXX where  budget.currency = 'GBP' ")
 	Double averageShoutaverageGbp();
 	
-	@Query("select STDDEV(budget.amount) FROM Tromem where  budget.currency = 'GBP'")
+	@Query("select STDDEV(budget.amount) FROM XXX where  budget.currency = 'GBP'")
 	Double stdevpShoutaverageGbp();
 
 

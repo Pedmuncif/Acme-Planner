@@ -27,3 +27,4 @@ anonymous.xxx.error.amountVacio = No puede estar vacio
 anonymous.xxx.error.currency = debe seguir cantidad moneda y tipo de moneda puede ser EUR, USD o GBP
 anonymous.xxx.error.pattern = debe seguir el patron “^XXXX$” (donde yy, mm, y dd son el año, el mes y dia de la creacion del shout)
 anonymous.xxx.error.mas = La fecha debe ser posterior a una semana
+anonymous.xxx.error.zero = Debe ser mayor o igual que 0

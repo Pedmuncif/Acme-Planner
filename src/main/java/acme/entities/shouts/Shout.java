@@ -13,7 +13,7 @@ import javax.validation.constraints.Past;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.tromem.Tromem;
+import acme.entities.xxx.XXX;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -47,5 +47,5 @@ public class Shout extends DomainEntity{
 	//Relacion
 
 		@OneToOne
-		protected Tromem tromem;
+		protected XXX xxx;
 }
