@@ -10,7 +10,6 @@ import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -29,7 +28,6 @@ public class Tromem extends DomainEntity{
 
 	@Column(unique = true)
 	@NotBlank
-	@Pattern(regexp = "^\\d{6}:210609$", message = "anonymous.xxx.error.pattern")
 	protected String keylet;
 	
 	

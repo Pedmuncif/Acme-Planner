@@ -82,7 +82,52 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		errors.state(request, x==null, "tromem.keylet", "anonymous.xxx.error.fechaIgual");
 		
 		//validacion pattern KeyLet.
-		final boolean bp = fechaAux.matches("^\\d{6}:210609$");
+		final String fechaShout = entity.getMoment().toString();
+		final String[] trozos = fechaShout.split(" ");
+		final String dd = trozos[2];
+		final String yy = trozos[trozos.length-1].substring(2, 4);
+		final String mm;
+		switch(trozos[1]) {
+			case "Jan":
+				mm="01";
+				break;
+			case "Feb":
+				mm="02";
+				break;
+			case "Mar":
+				mm="03";
+				break;
+			case "Apr":
+				mm="04";
+				break;
+			case "May":
+				mm="05";
+				break;
+			case "Jun":
+				mm="06";
+				break;
+			case "Jul":
+				mm="07";
+				break;
+			case "Aug":
+				mm="08";
+				break;
+			case "Sep":
+				mm="09";
+				break;
+			case "Oct":
+				mm="10";
+				break;
+			case "Nov":
+				mm="11";
+				break;
+			default:
+				mm="12";			
+		}
+		
+		//Patron
+		final String pattern = "^\\w{5}-"+dd+"/"+mm+"/"+yy;
+		final boolean bp = fechaAux.matches(pattern);
 		errors.state(request, bp, "tromem.keylet", "anonymous.xxx.error.pattern");
 		
 		//validacion vacio KeyLet.
