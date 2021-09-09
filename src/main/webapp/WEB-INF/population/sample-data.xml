@@ -44,7 +44,7 @@
 		<property name="title" value="Task003: Creating entity shout"/>
 		<property name="description" value="Creating entity shout"/>
 		<property name="startMoment" value="2021/09/08 12:30"/>
-		<property name="finishMoment" value="2021/09/09 14:30"/>
+		<property name="finishMoment" value="2021/09/20 14:30"/>
 		<property name="workload" value="26.00"/>
 		<property name="link" value=""/>
 		<property name="status" value="PUBLIC"></property>
@@ -54,7 +54,7 @@
 		<property name="title" value="Task004: Creating entity task"/>
 		<property name="description" value="Creating entity task"/>
 		<property name="startMoment" value="2021/09/08 11:30"/>
-		<property name="finishMoment" value="2021/09/10 14:30"/>
+		<property name="finishMoment" value="2021/09/20 14:30"/>
 		<property name="workload" value="27.00"/>
 		<property name="link" value="http://www.example.org"/>
 		<property name="status" value="PUBLIC"></property>
