@@ -17,4 +17,4 @@ Usuario de clever Cloud
   - password: DiseñoyPruebas-2021
   
 Url de la release
-  - https://github.com/Pedmuncif/Acme-Work-Plans/releases/tag/4.0.0
+  - https://github.com/Pedmuncif/Acme-Work-Plans/releases/tag/6.0.0
