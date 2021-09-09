@@ -33,7 +33,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert model != null;
 
 		request.unbind(entity, model,"nTasksPublic", "nTasksPrivate","nTasksFinished", "nTasksNoFinished", "averageWorkload","standardDeviationWorkload",
-			"maxWorkload","minWorkload","averageExecutionPeriod","standardDeviationExecutionPeriod","maxExecutionPeriod","minExecutionPeriod");
+			"maxWorkload","minWorkload","averageExecutionPeriod","standardDeviationExecutionPeriod","maxExecutionPeriod","minExecutionPeriod",
+			"averageShoutaverageEur","stdevpShoutaverageEur","stdevpShoutaverageUSD","averageShoutaverageUSD","averageShoutaverageGbp","stdevpShoutaverageGbp","nShoutImportant","nShoutbudget");
 
 		
 	}
@@ -50,14 +51,24 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		
 		final Double		averageWorkload;
 		final Double		standardDeviationWorkload;
-		final Double		maxWorkload;
-		final Double		minWorkload;
+		final Integer		maxWorkload;
+		final Integer		minWorkload;
 		
 		final Double		averageExecutionPeriod;
 		final Double		standardDeviationExecutionPeriod;
 		final Integer		maxExecutionPeriod;
 		final Integer		minExecutionPeriod;
 
+		final Double nShoutImportant;
+		final Double stdevpShoutaverageEur;
+		final Double averageShoutaverageEur;
+		final Double stdevpShoutaverageUSD;
+		final Double averageShoutaverageUSD;
+		final Double stdevpShoutaverageGbp;
+		final Double averageShoutaverageGbp;
+		final Double nShoutbudget;
+		
+		
 		Calendar calendar;
 		calendar = Calendar.getInstance();
 		final Date now = calendar.getTime();
@@ -78,6 +89,15 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		maxExecutionPeriod = this.repository.maxTaskExecutionPeriod();
 		minExecutionPeriod = this.repository.minTaskExecutionPeriod();
 		
+		nShoutImportant = this.repository.nShoutImportant();
+		stdevpShoutaverageEur = this.repository.stdevpShoutaverageEur();
+		averageShoutaverageEur = this.repository.averageShoutaverageEur();
+		stdevpShoutaverageUSD = this.repository.stdevpShoutaverageUSD();
+		averageShoutaverageUSD = this.repository.averageShoutaverageUSD();
+		stdevpShoutaverageGbp = this.repository.stdevpShoutaverageGbp();
+		averageShoutaverageGbp = this.repository.averageShoutaverageGbp();
+		nShoutbudget = this.repository.nShoutbudget();
+		
 		result = new Dashboard();
 		
 		result.setNTasksPublic(nTasksPublic);
@@ -94,6 +114,18 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setStandardDeviationExecutionPeriod(standardDeviationExecutionPeriod);
 		result.setMaxExecutionPeriod(maxExecutionPeriod);
 		result.setMinExecutionPeriod(minExecutionPeriod);
+		
+		
+		result.setNShoutImportant(nShoutImportant);
+		result.setStdevpShoutaverageEur(stdevpShoutaverageEur);
+		result.setAverageShoutaverageEur(averageShoutaverageEur);
+		result.setStdevpShoutaverageUSD(stdevpShoutaverageUSD);
+		result.setAverageShoutaverageUSD(averageShoutaverageUSD);
+		result.setStdevpShoutaverageGbp(stdevpShoutaverageGbp);
+		result.setAverageShoutaverageGbp(averageShoutaverageGbp);
+		
+		result.setNShoutbudget(nShoutbudget);
+		
 		
 		return result;
 

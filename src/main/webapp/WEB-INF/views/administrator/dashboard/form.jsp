@@ -4,6 +4,20 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
+
+<h2>
+	<acme:message code="administrator.dashboard.form.title.shouts-indicators"/>
+</h2>
+
+	<acme:form-textbox code="administrator.dashboard.form.label.nShoutImportant" path="nShoutImportant"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.stdevpShoutaverageEur" path="stdevpShoutaverageEur"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.averageShoutaverageEur" path="averageShoutaverageEur"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.stdevpShoutaverageUsd" path="stdevpShoutaverageUSD"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.averageShoutaverageUsd" path="averageShoutaverageUSD"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.stdevpShoutaverageGbp" path="stdevpShoutaverageGbp"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.averageShoutaverageGbp" path="averageShoutaverageGbp"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.averagebudget" path="nShoutbudget"/>
+
 <h2>
 	<acme:message code="administrator.dashboard.form.title.general-indicators"/>
 </h2>
@@ -29,5 +43,9 @@
 	<acme:form-textbox code="administrator.dashboard.form.label.standardDeviationExecutionPeriod" path="standardDeviationExecutionPeriod"/>
 	<acme:form-textbox code="administrator.dashboard.form.label.maxExecutionPeriod" path="maxExecutionPeriod"/>
 	<acme:form-textbox code="administrator.dashboard.form.label.minExecutionPeriod" path="minExecutionPeriod"/>
+	
 	<acme:form-return code="administrator.dashboard.form.button.return"/>
+	
+	
+	
 </acme:form>

@@ -8,3 +8,22 @@ anonymous.shout.list.label.moment = Momento
 anonymous.shout.list.label.text = Texto
 anonymous.shout.list.label.author = Autor
 anonymous.shout.list.label.info = Info
+
+
+anonymous.xxx.form.label.fecha = Keylet
+anonymous.xxx.form.label.amount = Cantidad
+anonymous.xxx.form.label.flag = Importante
+anonymous.xxx.form.label.deadline = Fecha final
+
+anonymous.xxx.list.label.id = ID
+anonymous.xxx.list.label.fecha = Keylet
+anonymous.xxx.list.label.amount = Cantidad
+anonymous.xxx.list.label.flag = Importante
+
+
+anonymous.xxx.error.null = No puede estar vacio
+anonymous.xxx.error.fechaIgual = La fecha ya existe
+anonymous.xxx.error.amountVacio = No puede estar vacio
+anonymous.xxx.error.currency = debe seguir cantidad moneda y tipo de moneda puede ser EUR, USD o GBP
+anonymous.xxx.error.pattern = El formato debe ser nnnnnn:210609
+anonymous.xxx.error.mas = La fecha debe ser posterior a una semana

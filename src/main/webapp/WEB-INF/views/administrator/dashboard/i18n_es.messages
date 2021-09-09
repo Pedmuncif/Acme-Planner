@@ -6,16 +6,26 @@ administrator.dashboard.form.label.nTasksPrivate = Tareas privadas
 administrator.dashboard.form.label.nTasksFinished = Tareas finalizadas
 administrator.dashboard.form.label.nTasksNoFinished = Tareas no finalizada
 
-administrator.dashboard.form.title.workload-indicators = Indicadores Cargas de trabajo (Horas y minutos)
-administrator.dashboard.form.label.averageWorkload = Media Cargas de trabajo (Horas y minutos)
-administrator.dashboard.form.label.standardDeviationWorkload = Desviación Tipica Cargas de trabajo (Horas y minutos)
-administrator.dashboard.form.label.maxWorkload = Maximo Cargas de trabajo (Horas y minutos)
-administrator.dashboard.form.label.minWorkload = Minimo Cargas de trabajo (Horas y minutos)
+administrator.dashboard.form.title.workload-indicators = Indicadores Cargas de trabajo (Minutos)
+administrator.dashboard.form.label.averageWorkload = Media Cargas de trabajo (Minutos)
+administrator.dashboard.form.label.standardDeviationWorkload = Desviación Tipica Cargas de trabajo (Minutos)
+administrator.dashboard.form.label.maxWorkload = Maximo Cargas de trabajo (Minutos)
+administrator.dashboard.form.label.minWorkload = Minimo Cargas de trabajo (Minutos)
 
 administrator.dashboard.form.title.executionPeriod-indicators = Indicadores Periodo de Ejecucion
 administrator.dashboard.form.label.averageExecutionPeriod = Media Periodo de Ejecucion (Dias)
 administrator.dashboard.form.label.standardDeviationExecutionPeriod =  Desviacion tipica Periodo de Ejecucion (Dias)
 administrator.dashboard.form.label.maxExecutionPeriod = Maximo Periodo de Ejecucion (Dias)
 administrator.dashboard.form.label.minExecutionPeriod = Minimo Periodo de Ejecucion (Dias)
+
+administrator.dashboard.form.label.nShoutImportant = Porcentaje Gritos importantes
+administrator.dashboard.form.title.shouts-indicators = Indicadores de shout
+administrator.dashboard.form.label.stdevpShoutaverageEur = Desviacion tipica (EUR)
+administrator.dashboard.form.label.averageShoutaverageEur = Media (EUR)
+administrator.dashboard.form.label.stdevpShoutaverageUsd = Desviacion tipica (USD)
+administrator.dashboard.form.label.averageShoutaverageUsd = Media (USD)
+administrator.dashboard.form.label.stdevpShoutaverageGbp = Desviacion tipica (GBP)
+administrator.dashboard.form.label.averageShoutaverageGbp = Media (GBP)
+administrator.dashboard.form.label.averagebudget = Porcetaje gritos precio 0
 
 administrator.dashboard.form.button.return = Volver

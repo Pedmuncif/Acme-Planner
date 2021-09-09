@@ -8,3 +8,22 @@ anonymous.shout.list.label.moment = Moment
 anonymous.shout.list.label.text = Text
 anonymous.shout.list.label.author = Author
 anonymous.shout.list.label.info = Info
+
+anonymous.xxx.form.label.fecha = Keylet
+anonymous.xxx.form.label.amount = Budget
+anonymous.xxx.form.label.flag = Important
+anonymous.xxx.form.label.deadline = deadline
+
+anonymous.xxx.list.label.id = ID
+anonymous.xxx.list.label.fecha = Keylet
+anonymous.xxx.list.label.amount = Budget
+anonymous.xxx.list.label.flag = Important
+
+
+anonymous.xxx.error.null = Can not be null
+anonymous.xxx.error.fechaIgual = Date already exists
+anonymous.xxx.error.amountVacio = Can not be empty
+anonymous.xxx.error.currency = Only USD or EUR or GBP are accepted and must follow currency amount 
+anonymous.xxx.error.pattern = Pattern must follow Formmat nnnnnn:210609
+anonymous.xxx.error.mas = The date mast be one week later
+
