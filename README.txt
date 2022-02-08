@@ -12,9 +12,6 @@ Usuario de Clever Cloud asociado a GitHub.
 
 - URL del repositorio en GitHub: https://github.com/Pedmuncif/Acme-Work-Plans.git
 
-Usuario de clever Cloud
-  - username: CCDP2
-  - password: DiseñoyPruebas-2021
   
 Url de la release
   - https://github.com/Pedmuncif/Acme-Work-Plans/releases/tag/6.0.0
